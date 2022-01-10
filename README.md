@@ -30,47 +30,47 @@ telegramID="messae" whatsappNumber="543412293515" messengerID="dufouralan">
 ```
 ** Repasemos los campos 🔧 **
 
-keyCodeTeller: Déjalo como está.
+- keyCodeTeller: Déjalo como está.
 
-lang: Elige entre "en" ó "es" (Es el idioma en el cúal re realizará la base de datos en el formulario de Google que integres.)
+- lang: Elige entre "en" ó "es" (Es el idioma en el cúal re realizará la base de datos en el formulario de Google que integres.)
 
-supportHours: Intervalo de horas en las que figurará activo el operador de cada bot{on que integres. (No olvides de colocar la zona horaria, ya que funciona de acuerdo a la zona horaria del usuario que esté navegando.) 
+- supportHours: Intervalo de horas en las que figurará activo el operador de cada bot{on que integres. (No olvides de colocar la zona horaria, ya que funciona de acuerdo a la zona horaria del usuario que esté navegando.) 
 
-username: Compañia o agrupación que utiliza el servicio.
+- username: Compañia o agrupación que utiliza el servicio.
 
-operatorName: Nombre de la persona que está detrás del teléfono. (En caso que dejes el campo en blanco, pondremos el nombre de la compañía o agrupación de forma predeterminada.)
+- operatorName: Nombre de la persona que está detrás del teléfono. (En caso que dejes el campo en blanco, pondremos el nombre de la compañía o agrupación de forma predeterminada.)
 
-tellerMode: Es el modo de Widget que utilizarás, actualmente está disponible el modo "brick" únicamente, así que déjalo de esa manera.
+- tellerMode: Es el modo de Widget que utilizarás, actualmente está disponible el modo "brick" únicamente, así que déjalo de esa manera.
 
-userColor: Es el color que representa a tu agrupación o empresa, en caso que lo dejes en blanco se rellenera de forma automática en blanco o gris de acuerdo al tema elegido.
+- userColor: Es el color que representa a tu agrupación o empresa, en caso que lo dejes en blanco se rellenera de forma automática en blanco o gris de acuerdo al tema elegido.
 
-side: Lugar en la pantalla donde se ubicará el botón ("left" si quieres que aparezca a la izquierda, o "right" si quieres que aparezca a la derecha, en caso que lo dejes en blanco aparecera a la derecha de forma predeterminada.)
+- side: Lugar en la pantalla donde se ubicará el botón ("left" si quieres que aparezca a la izquierda, o "right" si quieres que aparezca a la derecha, en caso que lo dejes en blanco aparecera a la derecha de forma predeterminada.)
 
-borderRadius: Redonde del botón y de la barra de complementos. (Recomendado: 5 ó 25);
+- borderRadius: Redonde del botón y de la barra de complementos. (Recomendado: 5 ó 25);
 
-theme: Tema del widget, puedes elegír entre light ó dark.
+- theme: Tema del widget, puedes elegír entre light ó dark.
 
-callToAction: Mensaje de llamado de acción.
+- callToAction: Mensaje de llamado de acción.
 
-appearAfter: Tiempo en segundos en que aparecerá el llamado a la acción. (En caso que lo dejes en blanco aparecerá de forma predeterminada a los 5 segundos.)
+- appearAfter: Tiempo en segundos en que aparecerá el llamado a la acción. (En caso que lo dejes en blanco aparecerá de forma predeterminada a los 5 segundos.)
 
-bubbleText: Mensaje que aparecerá en el mensaje de las plataformas integradas. (Messenger, Whatsapp, Telegram.)
+- bubbleText: Mensaje que aparecerá en el mensaje de las plataformas integradas. (Messenger, Whatsapp, Telegram.)
 
-photoURL: Link de la imagen que aparecerá en las plataformas integradas. (Messenger, Whatsapp, Telegram.)
+- photoURL: Link de la imagen que aparecerá en las plataformas integradas. (Messenger, Whatsapp, Telegram.)
 
-formURL: Link al formulario de Google Form donde se almacenarán las opiniones que recibas de tus visitantes, tén en cuenta que el link ha de ser un link pre-rellenado para obtener los numeros de entrys del formulario. (El mismo ha de contener 4 inputs, 2 de respuesta corta, 1 de respuesta larga y 1 de respuesta corta respectivamente. Para más información sobre como obtener un link de formulario pre-rellenado visitá https://support.google.com/a/users/answer/9308781?hl=en)
+- formURL: Link al formulario de Google Form donde se almacenarán las opiniones que recibas de tus visitantes, tén en cuenta que el link ha de ser un link pre-rellenado para obtener los numeros de entrys del formulario. (El mismo ha de contener 4 inputs, 2 de respuesta corta, 1 de respuesta larga y 1 de respuesta corta respectivamente. Para más información sobre como obtener un link de formulario pre-rellenado visitá https://support.google.com/a/users/answer/9308781?hl=en)
 
-messengerID: ID de messenger de tu perfil de facebook o el de tu compañia, puede ser un número o un nombre. Es el texto que aparece justo luego de "facebook.com/aaaaaaa" cuando visitás tu perfil de Facebook.
+- messengerID: ID de messenger de tu perfil de facebook o el de tu compañia, puede ser un número o un nombre. Es el texto que aparece justo luego de "facebook.com/aaaaaaa" cuando visitás tu perfil de Facebook.
 
-whatsappNumber: Número de whatsapp con código de país incluído o ID en caso de ser un una cuenta Enterprise. (Ejemplo: si tu número es +54 345 2 293 515 deberías de poner"5493452293515")
+- whatsappNumber: Número de whatsapp con código de país incluído o ID en caso de ser un una cuenta Enterprise. (Ejemplo: si tu número es +54 345 2 293 515 deberías de poner"5493452293515")
 
-telegramID: ID de tu cuenta de Telegram o nombre de usuario.
+- telegramID: ID de tu cuenta de Telegram o nombre de usuario.
 
 ** Comprueba que funcione correctamente 🔧 **
 
-- Eso es todo, ya puedes empezar a recibir feedback, consultas y mensajes en tu página web.
+Eso es todo, ya puedes empezar a recibir feedback, consultas y mensajes en tu página web.
 
-- Solo observa la magia. 
+Solo observa la magia. 
 
 ** Construido con 🛠️ **
 
