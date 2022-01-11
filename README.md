@@ -76,7 +76,7 @@ Solo observa la magia.
 
 ** Construido con 🛠️ **
 
-* Pure Javascript & GoogleForms.
+* Pure Javascript.
 
 ** Contribuyendo 🖇️ **
 
