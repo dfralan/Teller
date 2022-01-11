@@ -3,14 +3,16 @@ Chat button and feedback Widget.
 
 ** Updates 🤖 **
 
-- Integration with Facebook Messenger
-- Integration with Telegram
-- Integration with Whatsapp
-- Feedback integration with Google Forms
+- Integration with Facebook Messenger.
+- Integration with Telegram.
+- Integration with Whatsapp.
+- Feedback integration with Google Forms.
+- Soporte inglés y español.
 
 ** Importante 🦄 **
 
-La integraci{on con el formulario de Google se realiza manualmente, es decir que tienes que generar el link del formulario de Google pre-rellenado desde tu cuenta de Google iniciada.
+La integración con el formulario de Google se realiza manualmente, es decir que tienes que generar el link del formulario de Google pre-rellenado desde tu cuenta de Google iniciada.
+Puedes integrar solo una plataforma o todas las que quieras, en caso que decidas no utilizar una, por ejemplo Telegram, solo deja el campo en blanco, el botón no aparecerá en la barra de complementos.
 
 ** Comenzando 🚀 **
 
@@ -23,7 +25,7 @@ Estas instrucciones te permitirán crear tu botón de chat y agregarlo a tu proy
 - Creá el siguiente elemento y agregalo al cuerpo de tu HTML modificando los datos que correspondan.
 
 ```bash
-<teller keyCodeTeller="dbcadceaeea4b522e42b160db3953980" lang="en" supportHours="08:00/14:00(-03:00)" username="Teller" operatorName="Nadia Herrera" tellerMode="brick" userColor="" side="left" borderRadius="5" theme="light" appearAfter="5" bubbleText="" callToAction="Hablemos..." photoUrl="https://viviendassion.com/wp-content/uploads/2020/12/sion_foto1.webp"
+<teller keyCodeTeller="dbcadceaeea4b522e42b160db3953980" lang="en" supportHours="08:00/14:00(-03:00)" username="Teller" operatorName="Juancho Rodriguez" tellerMode="brick" userColor="" side="left" borderRadius="5" theme="light" appearAfter="5" bubbleText="" callToAction="Hablemos..." photoUrl="https://viviendassion.com/wp-content/uploads/2020/12/sion_foto1.webp"
 formUrl="https://docs.google.com/forms/d/e/1FAIpQLSdpgab-bhAdoFrIO7hqw2woqA7dIzxNHZa5sXCoMGfHT7NNCg/viewform?usp=pp_url&entry.1085830910=nice&entry.601918770=pepe&entry.1067325052=naranja&entry.52853599=pepe"
 telegramID="messae" whatsappNumber="543412293515" messengerID="dufouralan">
 </teller>
@@ -34,7 +36,7 @@ telegramID="messae" whatsappNumber="543412293515" messengerID="dufouralan">
 
 - lang: Elige entre "en" ó "es" (Es el idioma en el cúal re realizará la base de datos en el formulario de Google que integres.)
 
-- supportHours: Intervalo de horas en las que figurará activo el operador de cada bot{on que integres. (No olvides de colocar la zona horaria, ya que funciona de acuerdo a la zona horaria del usuario que esté navegando.) 
+- supportHours: Intervalo de horas en las que figurará activo el operador de cada botón que integres. (No olvides de colocar la zona horaria, ya que funciona de acuerdo a la zona horaria del usuario que esté navegando.) 
 
 - username: Compañia o agrupación que utiliza el servicio.
 
@@ -54,9 +56,9 @@ telegramID="messae" whatsappNumber="543412293515" messengerID="dufouralan">
 
 - appearAfter: Tiempo en segundos en que aparecerá el llamado a la acción. (En caso que lo dejes en blanco aparecerá de forma predeterminada a los 5 segundos.)
 
-- bubbleText: Mensaje que aparecerá en el mensaje de las plataformas integradas. (Messenger, Whatsapp, Telegram.)
+- bubbleText: Mensaje que aparecerá en la burbuja de las plataformas integradas. (Messenger, Whatsapp, Telegram.)
 
-- photoURL: Link de la imagen que aparecerá en las plataformas integradas. (Messenger, Whatsapp, Telegram.)
+- photoURL: Link de la imagen del perfil que aparecerá en las plataformas integradas. (Messenger, Whatsapp, Telegram.)
 
 - formURL: Link al formulario de Google Form donde se almacenarán las opiniones que recibas de tus visitantes, tén en cuenta que el link ha de ser un link pre-rellenado para obtener los numeros de entrys del formulario. (El mismo ha de contener 4 inputs, 2 de respuesta corta, 1 de respuesta larga y 1 de respuesta corta respectivamente. Para más información sobre como obtener un link de formulario pre-rellenado visitá https://support.google.com/a/users/answer/9308781?hl=en)
 
