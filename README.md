@@ -20,8 +20,6 @@ Estas instrucciones te permitirán crear tu botón de chat y agregarlo a tu proy
 
 ** Pre-requisitos 📋 **
 
-- Consigue el CDN de Teller o agrega el archivo teller.js o teller.min.js a tu proyecto: https://github.com/dfralan/Teller/blob/main/teller.js 
-
 - Creá el siguiente elemento y agregalo al cuerpo de tu HTML modificando los datos que correspondan.
 
 ```bash
@@ -30,6 +28,13 @@ formUrl="https://docs.google.com/forms/d/e/1FAIpQLSdpgab-bhAdoFrIO7hqw2woqA7dIzx
 telegramID="messae" whatsappNumber="543412293515" messengerID="dufouralan">
 </teller>
 ```
+
+- Conseguí el CDN de Teller o agrega el archivo teller.js o teller.min.js a tu proyecto por debajo del elemento de esta forma: https://github.com/dfralan/Teller/blob/main/teller.js
+
+```bash
+<script src="teller.js"></script> 
+```
+
 ** Repasemos los campos 🔧 **
 
 - keyCodeTeller: Déjalo como está.
