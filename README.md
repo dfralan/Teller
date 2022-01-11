@@ -13,6 +13,7 @@ Chat button and feedback Widget.
 
 La integración con el formulario de Google se realiza manualmente, es decir que tienes que generar el link del formulario de Google pre-rellenado desde tu cuenta de Google iniciada.
 Puedes integrar solo una plataforma o todas las que quieras, en caso que decidas no utilizar una, por ejemplo Telegram, solo deja el campo en blanco, el botón no aparecerá en la barra de complementos.
+Este complemento utiliza UTF-8, asegurate de utilizarlo para ver los caractéres de forma correcta.
 
 ** Comenzando 🚀 **
 
