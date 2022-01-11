@@ -23,9 +23,25 @@ Estas instrucciones te permitirán crear tu botón de chat y agregarlo a tu proy
 - Creá el siguiente elemento y agregalo al cuerpo de tu HTML modificando los datos que correspondan.
 
 ```bash
-<teller keyCodeTeller="dbcadceaeea4b522e42b160db3953980" lang="en" supportHours="08:00/14:00(-03:00)" username="Teller" operatorName="Juancho Rodriguez" tellerMode="brick" userColor="" side="left" borderRadius="5" theme="light" appearAfter="5" bubbleText="" callToAction="Hablemos..." photoUrl="https://viviendassion.com/wp-content/uploads/2020/12/sion_foto1.webp"
-formUrl="https://docs.google.com/forms/d/e/1FAIpQLSdpgab-bhAdoFrIO7hqw2woqA7dIzxNHZa5sXCoMGfHT7NNCg/viewform?usp=pp_url&entry.1085830910=nice&entry.601918770=pepe&entry.1067325052=naranja&entry.52853599=pepe"
-telegramID="messae" whatsappNumber="543412293515" messengerID="dufouralan">
+<teller 
+        keyCodeTeller="dbcadceaeea4b522e42b160db3953980"
+        lang="en"
+        supportHours="12:00/13:59(-03:00)"
+        username="Teller by Unirvana"
+        operatorName="Nadia Herrera"
+        tellerMode="brick"
+        userColor=""
+        side="left"
+        borderRadius="5"
+        theme="light"
+        appearAfter="5"
+        bubbleText=""
+        callToAction="Hablemos..."
+        photoUrl="https://viviendassion.com/wp-content/uploads/2020/12/sion_foto1.webp"
+        formUrl="https://docs.google.com/forms/d/e/1FAIpQLSdpgab-bhAdoFrIO7hqw2woqA7dIzxNHZa5sXCoMGfHT7NNCg/viewform?usp=pp_url&entry.1085830910=nice&entry.601918770=pepe&entry.1067325052=naranja&entry.52853599=pepe"
+        telegramID="messae"
+        whatsappNumber="543412293515"
+        messengerID="dufouralan">
 </teller>
 ```
 
