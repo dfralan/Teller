@@ -29,7 +29,7 @@ telegramID="messae" whatsappNumber="543412293515" messengerID="dufouralan">
 </teller>
 ```
 
-- Conseguí el CDN de Teller o agrega el archivo teller.js o teller.min.js a tu proyecto por debajo del elemento de esta forma: https://github.com/dfralan/Teller/blob/main/teller.js
+- Linkea el CDN de Teller o agrega el archivo teller.js o teller.min.js a tu proyecto por debajo del elemento de esta forma: https://github.com/dfralan/Teller/blob/main/teller.js
 
 ```bash
 <script src="teller.js"></script> 
