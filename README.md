@@ -38,7 +38,7 @@ Estas instrucciones te permitirán crear tu botón de chat y agregarlo a tu proy
         appearAfter="5"
         bubbleText="¡Hola! Mi nombre es Juancho, ¿Qué puedo hacer por ti?"
         callToAction="Hablemos..."
-        photoUrl="https://viviendassion.com/wp-content/uploads/2020/12/sion_foto1.webp"
+        photoUrl="https://image.shutterstock.com/image-photo/office-business-technology-internet-concept-260nw-253766386.jpg"
         formUrl="https://docs.google.com/forms/d/e/1FAIpQLSdpgab-bhAdoFrIO7hqw2woqA7dIzxNHZa5sXCoMGfHT7NNCg/viewform?usp=pp_url&entry.1085830910=nice&entry.601918770=pepe&entry.1067325052=naranja&entry.52853599=pepe"
         telegramID="messae"
         whatsappNumber="543412293515"
