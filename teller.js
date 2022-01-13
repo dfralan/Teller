@@ -29,15 +29,14 @@ function kiujdgrsghsss(){
     const nebulaGrey = '#E8E8E8';
     const realGrey = '#808080';
     const charmingGrey = '#2A2F32';
-    const messengerBlue = '#0384FF';
-    const wspGreen = '#03D79C';
+    const screenCharmingGrey = 'rgba(42,47,50,0.2)';
     const onlineGreen = '#31A24C';
     const tellerGreen = '#03D79C';
     const telegramBlue = '#2AA2C6';
     const screenGrey = 'rgba(0,0,0,0.05)';
     const screenWhite = 'rgba(255,255,255,0.05)';
     //Platform Buttons
-    const feedbackMainButton = '<svg id="buttonFeedbackBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><rect class="transparentBG" width="50" height="50"/><path id="feedbackIconShape" d="M25,0C11.2,0,0,11.2,0,25s11.2,25,25,25s25-11.2,25-25S38.8,0,25,0z M36.5,14.5L22.5,36.2c-0.2,0.3-0.7,0.2-0.8-0.2l-0.6-10.6c0-0.2-0.2-0.4-0.4-0.4l-7.2-1c-0.4-0.1-0.5-0.6-0.1-0.8L36,13.9C36.4,13.8,36.8,14.2,36.5,14.5z"/></svg>'
+    const feedbackMainButton = '<svg id="buttonFeedbackBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><rect class="transparentBG" width="50" height="50"/><path id="feedbackIconShape" d="M25,0C11.2,0,0,11.2,0,25s11.2,25,25,25s25-11.2,25-25S38.8,0,25,0z M38.5,12.8L21.2,39.4c-0.3,0.4-0.9,0.2-0.9-0.3l-0.7-13.1c0-0.2-0.2-0.4-0.4-0.5l-8.8-1.3c-0.5-0.1-0.6-0.8-0.1-1L37.8,12C38.3,11.9,38.7,12.4,38.5,12.8z"/></svg>'
     const messengerMainButton = '<svg id="buttonMessengerBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><rect class="transparentBG" y="0" width="50" height="50"/><path id="messengerIconShape" d="M25,0C11.5,0,0.5,11.1,0.7,24.5c0.1,6.8,3,12.9,7.5,17.3c0.5,0.5,0.8,1.2,0.8,1.9v4.1c0,1.5,1.6,2.6,3.1,1.9 l4.5-2c0.6-0.3,1.2-0.3,1.8-0.1c2,0.6,4.3,0.9,6.5,0.9c13.3,0,24.3-10.9,24.3-24.2C49.2,10.9,38.3,0,25,0z M40,18.5l-7.2,11.4	c-1.2,1.8-3.7,2.3-5.5,1.1l-2-1.4l-3.6-2.5c-0.7-0.5-1.6-0.4-2.2,0.1l-7.2,5.9c-1.2,0.9-2.7-0.5-1.9-1.7L17.5,20c1.2-1.8,3.7-2.3,5.5-1.1l3,2.1l2.6,1.9c0.7,0.5,1.6,0.4,2.2-0.1l7.2-5.9C39.2,15.9,40.8,17.3,40,18.5z"/></svg>';
     const wspMainButton = '<svg id="buttonWhatsappBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><rect class="transparentBG" width="50" height="50"/><path id="whatsappIconShape" d="M42.5,7.4c-4.7-4.6-10.9-7.2-17.6-7.2C11.2,0.2,0,11.3,0,25.1c0,4.7,1.4,9.3,3.8,13.2l0.6,0.9l-2.5,9.2l9.4-2.5	l0.9,0.5c3.8,2.3,8.2,3.5,12.7,3.5C38.6,49.8,50,38.7,50,24.9C50,18.3,47.2,12.1,42.5,7.4z M39.5,35.7c-0.6,1.8-3.6,3.3-5,3.6	c-2.4,0.3-4.2,0.2-9-1.9C18,34.2,13.1,26.6,12.8,26.1c-0.3-0.5-3-4.1-3-7.7s1.9-5.4,2.6-6.3c0.6-0.7,1.5-0.9,2-0.9s1,0,1.5,0 c0.4,0,1-0.2,1.7,1.3c0.6,1.5,2.1,5.1,2.3,5.5c0.2,0.4,0.3,0.8,0.1,1.3c-1.5,2.8-2.9,2.7-2.2,4.1c2.9,4.9,5.8,6.7,10.1,8.9 c0.7,0.4,1.2,0.3,1.6-0.2c0.4-0.5,1.9-2.2,2.4-2.9c0.5-0.7,1-0.6,1.7-0.4c0.6,0.2,4.4,2.1,5.1,2.4c0.7,0.4,1.3,0.5,1.5,0.8 C40.2,32.5,40.2,33.9,39.5,35.7z"/></svg>';
     const telegramMainButton = '<svg id="buttonTelegramBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><rect class="transparentBG" width="50" height="50"/><path id="telegramIconShape" d="M25,0C11.2,0,0,11.2,0,25s11.2,25,25,25s25-11.2,25-25S38.8,0,25,0z M36.9,16.3c-0.1,1-0.7,4.6-1.2,8.4L33.9,36	c0,0-0.1,1.7-1.4,2c-1.2,0.3-3.3-1-3.6-1.3c-0.3-0.2-5.4-3.5-7.3-5.1c-0.5-0.4-1.1-1.3,0.1-2.3c2.6-2.4,5.7-5.3,7.6-7.2	c0.9-0.9,1.7-2.9-1.9-0.4l-10.2,6.9c0,0-1.2,0.7-3.3,0.1C11.7,27.9,9.2,27,9.2,27s-1.8-1.1,1.2-2.2l16.8-6.9c1.7-0.7,7.3-3,7.3-3 S37.1,13.9,36.9,16.3z"/></svg>';
@@ -93,7 +92,7 @@ function kiujdgrsghsss(){
         display:none;\
         opacity: 0;\
         position: absolute!important;\
-        bottom: 60px!important;\
+        bottom: 70px!important;\
         '+ getSide()[0] +': 0px!important;\
         transition:  .3s !important;\
         -webkit-transition:  .3s !important;\
@@ -102,9 +101,10 @@ function kiujdgrsghsss(){
         filter: drop-shadow(0 0 0.25rem rgba(0,0,0,0.1));\
         border: 1px solid rgba(0,0,0,0.1);\
         border-radius: 5px;\
-        min-width: 190px;\
+        width: auto;\
+        min-width: 150px;\
         height: auto!important;\
-        padding: 10px 70px 15px 15px;\
+        padding: 10px 15px 15px 15px;\
         text-align: left;\
         font-weight: 200!important;\
         font-size: small!important;\
@@ -112,22 +112,15 @@ function kiujdgrsghsss(){
         color: '+  byTheme(charmingGrey,realWhite) +';\
         background-color: '+  byTheme(realWhite,charmingGrey) +'!important;\
     }\
-    #hoverBrickClose {\
-        position: absolute !important;\
-        transition:  .3s !important;\
-        -webkit-transition:  .3s !important;\
-        -moz-transition:  .3s !important;\
-        -o-transition:  .3s !important;\
-        right: 10px;\
-        top: 10px;\
-        width: 20px;\
-        height: 20px;\
-        background-color: '+ byTheme(charmingGrey,realWhite) +';\
-        border-radius: 3px !important;\
-    }\
-    #hoverBrickClose:hover {\
-        opacity: .8;\
-    }\
+    #hoverBrick:after{\
+        content:"";\
+        border-width:10px 5px 0;\
+        border-style:solid;\
+        border-color:'+  byTheme(realWhite,charmingGrey) +' transparent;\
+        position:absolute;\
+        top:100%;\
+        left:10px\
+      }\
     #buttonFatherBrick {\
         opacity: 1;\
         transition: .3s!important;\
@@ -183,7 +176,7 @@ function kiujdgrsghsss(){
         -webkit-transition: .3s!important;\
         -moz-transition: .3s!important;\
         -o-transition: .3s!important;\
-        fill:'+ byTheme(nebulaGrey,realGrey)+';\
+        fill:'+ byTheme(nebulaGrey,screenCharmingGrey)+';\
     }\
     #fatherBrick {\
         display: none;\
@@ -1374,7 +1367,7 @@ function kiujdgrsghsss(){
         background-image: url('+userPicture()+');\
         background-color:'+byTheme(charmingGrey,realWhite)+';\
         background-repeat: no-repeat;\
-        background-size: 100% 100%;\
+        background-size: cover;\
     }\
     #stateLight{\
         background-color: '+realGrey+';\
@@ -1575,7 +1568,7 @@ function kiujdgrsghsss(){
         -webkit-transition: .3s!important;\
         -moz-transition: .3s!important;\
         -o-transition: .3s!important;\
-        fill:'+ byTheme(nebulaGrey,realGrey)+';\
+        fill:'+ byTheme(nebulaGrey,screenCharmingGrey)+';\
     }\
     #telegramArea {\
         display: none;\
@@ -1729,7 +1722,7 @@ function kiujdgrsghsss(){
     
     const asdwertd = ("dbcadceaeea4b522e42b160db3953980"||"d868333ef2514f9979eeefd5713d608d"||"5cf8cb462a3bbacb27968ac14872f094"||"ecaf77a718f3083fa585534aa356126f"||"4c03fdb2a2b92a0ff5b3e56cc636bd37"||"995939e3386cb19d29bf58b1728d7b29"||"d73178e5bcaf544c9cccf98cabbe14b3"||"ddbf6edd990ded708965bae067c8b8b7"||"c594323783ddbac8e206f89fa004e6c4"||"b8dbe52060359d80b37174af8556ec23");
     //Teller full element
-    var tellerBrick = '    <brick id="hoverBrick">        <brick id="hoverBrickP"></brick>        <brick id="hoverBrickClose"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"height="20px" viewBox="0 0 20 20" style="overflow:visible;enable-background:new 0 0 20 20;" xml:space="preserve"><style type="text/css">.backgroundXCloseAlert{fill:none;}.xCloseAlert{fill:'+  byTheme(realWhite,charmingGrey) +';}</style><circle class="backgroundXCloseAlert" cx="10" cy="10" r="10"/><path class="xCloseAlert" d="M11.6,9.9L14,7.4c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0l-2.4,2.4L7.7,6c-0.4-0.4-1-0.4-1.4,0	c-0.4,0.4-0.4,1,0,1.4l2.4,2.4l-2.4,2.4c-0.4,0.4-0.4,1,0,1.4C6.5,13.9,6.7,14,7,14c0.3,0,0.5-0.1,0.7-0.3l2.4-2.4l2.4,2.4	c0.2,0.2,0.5,0.3,0.7,0.3c0.3,0,0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L11.6,9.9z"/></svg></brick>    </brick>         <brick id="buttonFatherBrick">        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30" ><circle class="tellersFace" cx="15" cy="15" r="15"/><path id="palomita" d="M7.2,13.9l14.2-5.8c0.2-0.1,0.5,0.2,0.3,0.4l-8.9,13.6c-0.1,0.2-0.5,0.1-0.5-0.1L12,15.3c0-0.1-0.1-0.2-0.2-0.2l-4.5-0.6C7,14.4,7,14,7.2,13.9z"/><path id="xBrick" d="M17.3,14.8l3.7-3.7c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0l-3.7,3.7L11.6,9C11,8.4,10,8.4,9.4,9c-0.6,0.6-0.6,1.5,0,2.1l3.7,3.7l-3.7,3.7c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4c0.4,0,0.8-0.1,1.1-0.4l3.7-3.7l3.7,3.7c0.3,0.3,0.7,0.4,1.1,0.4c0.4,0,0.8-0.1,1.1-0.4c0.6-0.6,0.6-1.5,0-2.1L17.3,14.8z"/></svg>    </brick>         <brick id="buttonsComplementsBrick">    '+ complementsComposer()[0] +'    </brick>         <brick id="fatherBrick">            <brick id="mainNotificationBrick">            <brick id="titleBrick">' + byLanguage("How would you describe your experience?","Califique su experiencia.") + '</brick>            <brick id="paragraphBrick">' + byLanguage('Powered by '+ tellerSmallA,'Con el poder de '+ tellerSmallA) + '</brick>        </brick>                <brick id="feedbackBrick">            <brick id="emojisBrick">                <brick id="emojiBrick1">                    <brick id="emojiFaceBrick1"><svg id="SuperFaceTeller" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs></defs><g><circle class="tellersFace" cx="20" cy="20" r="20"/><g><path class="tellersGesture" d="M27.17,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,27.17,13.58Z"/><path class="tellersGesture" d="M14.34,15.09a1.51,1.51,0,1,0-1.51,1.51A1.52,1.52,0,0,0,14.34,15.09Z"/><path class="tellersGesture" d="M25.5,20.89h-11a1,1,0,0,0-.79.37,1,1,0,0,0-.19.85A6.32,6.32,0,0,0,20,26.66c4.44,0,6.18-3,6.49-4.58a1,1,0,0,0-.21-.83A1,1,0,0,0,25.5,20.89Z"/></g></g></svg></brick>                    <brick id="emojiDescriptionBrick1">Super</brick>                </brick>                <brick id="emojiBrick2">                        <brick id="emojiFaceBrick2"><svg id="GoodFaceTeller" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs></defs><g><circle class="tellersFace" cx="20" cy="20" r="20"/><g><path class="tellersGesture" d="M27.17,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,27.17,13.58Z"/><path class="tellersGesture" d="M14.34,15.09a1.51,1.51,0,1,0-1.51,1.51A1.52,1.52,0,0,0,14.34,15.09Z"/><path class="tellersGesture" d="M25,20.71a8.54,8.54,0,0,1-5,1.34,8.47,8.47,0,0,1-5-1.34,1,1,0,1,0-1.28,1.53A10.17,10.17,0,0,0,20,24.05a10.17,10.17,0,0,0,6.3-1.81A1,1,0,1,0,25,20.71Z"/></g></g></svg></brick>                        <brick id="emojiDescriptionBrick2">' + byLanguage("Good","Buena") + '</brick>                </brick>                <brick id="emojiBrick3">                        <brick id="emojiFaceBrick3"><svg id="NeutralFaceTeller" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs></defs><g><circle class="tellersFace" cx="20" cy="20" r="20"/><g><path class="tellersGesture" d="M27.17,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,27.17,13.58Z"/><path class="tellersGesture" d="M12.83,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,12.83,13.58Z"/><path class="tellersGesture" d="M23.47,22.4H16.53a1,1,0,0,0,0,2h6.94a1,1,0,0,0,0-2Z"/></g></g></svg></brick>                        <brick id="emojiDescriptionBrick3">Neutral</brick>                </brick>                <brick id="emojiBrick4">                        <brick id="emojiFaceBrick4"><svg id="BadFaceTeller" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs></defs><g><circle class="tellersFace" cx="20" cy="20" r="20"/><g><path class="tellersGesture" d="M27.17,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,27.17,13.58Z"/><path class="tellersGesture" d="M14.34,15.09a1.51,1.51,0,1,0-1.51,1.51A1.52,1.52,0,0,0,14.34,15.09Z"/><path class="tellersGesture" d="M20,20.47a10.18,10.18,0,0,0-6.3,1.82A1,1,0,1,0,15,23.82a8.46,8.46,0,0,1,5-1.35,8.46,8.46,0,0,1,5,1.35,1,1,0,0,0,.64.23,1,1,0,0,0,.64-1.76A10.18,10.18,0,0,0,20,20.47Z"/></g></g></svg></brick>                        <brick id="emojiDescriptionBrick4">' + byLanguage("Bad","Mala") + '</brick>                </brick>                <brick id="emojiBrick5">                        <brick id="emojiFaceBrick5"><svg id="FuriousFaceTeller" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs></defs><g><circle class="tellersFace" cx="20" cy="20" r="20"/><g><path class="tellersGesture" d="M27.17,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,27.17,13.58Z"/><path class="tellersGesture" d="M14.34,15.09a1.51,1.51,0,1,0-1.51,1.51A1.52,1.52,0,0,0,14.34,15.09Z"/><path class="tellersGesture" d="M20,20.13c-4.44,0-6.18,3-6.49,4.59a1,1,0,0,0,.21.82,1,1,0,0,0,.78.37h11a1,1,0,0,0,.79-.38,1,1,0,0,0,.19-.84A6.32,6.32,0,0,0,20,20.13Z"/></g></g></svg></brick>                        <brick id="emojiDescriptionBrick5">' + byLanguage("Furious","Furiosa") + '</brick>                </brick>                <brick id="emojiSelectorBrick"></brick>            </brick>            <brick id="textAreasBrick">                <textarea id="textAreaBrick" placeholder="' + byLanguage("How would you describe your experience?","Compartanos su experiencia.") + '"></textarea>            </brick>            <brick id="inputAreasBrick">                <input id="inputAreaBrick" placeholder="' + byLanguage("email@example.com","correo@ejemplo.com") + '"></input>            </brick>            <brick id="actionButtonBrick">' + byLanguage("NEXT","SIG.") + '</brick>            <brick id="skipButtonBrick">' + byLanguage("Skip","Omitir") + '</brick>            <brick id="notificationParagraphBrick"></brick>        </brick>            <brick id="sharedComponentsArea">            <brick id="imagenPerfilOperator" src="none" alt="teller Operator"><brick id="stateLight"></brick></brick>            <brick id="operatorBrick">'+ operatorData()[0] +'</brick>            <brick id="stateBrick">'+ operatorData()[1] +'</brick>            <brick id="platformBoxBrick"><brick id="bubbleWelcome">...</brick></brick>        </brick>            <brick id="whatsappArea">            <input id="textAreaWsp" placeholder="' + byLanguage("Send us a message","Escribe un mensaje.") + '"></input>            <brick id="wspSendButtonBrick">' + wspSendButtonIcon +'</brick>        </brick>            <brick id="telegramArea">            <input id="textAreaTelegram" placeholder="' + byLanguage("Join us in Telegram","Unetenos en Telegram.") + '"></input>            <brick id="telegramSendButtonBrick">' + telegramSendButtonIcon +'</brick>        </brick>        <brick id="messengerArea">            <a id="messengerSendButtonBrick">'+ byLanguage("Send us a message","Envienos un mensaje") + messengerSendButtonIcon +'</a>        </brick>        </brick>'
+    var tellerBrick = '    <brick id="hoverBrick">        <brick id="hoverBrickP"></brick>            </brick>         <brick id="buttonFatherBrick">        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30" ><circle class="tellersFace" cx="15" cy="15" r="15"/><path id="palomita" d="M7.2,13.9l14.2-5.8c0.2-0.1,0.5,0.2,0.3,0.4l-8.9,13.6c-0.1,0.2-0.5,0.1-0.5-0.1L12,15.3c0-0.1-0.1-0.2-0.2-0.2l-4.5-0.6C7,14.4,7,14,7.2,13.9z"/><path id="xBrick" d="M17.3,14.8l3.7-3.7c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0l-3.7,3.7L11.6,9C11,8.4,10,8.4,9.4,9c-0.6,0.6-0.6,1.5,0,2.1l3.7,3.7l-3.7,3.7c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4c0.4,0,0.8-0.1,1.1-0.4l3.7-3.7l3.7,3.7c0.3,0.3,0.7,0.4,1.1,0.4c0.4,0,0.8-0.1,1.1-0.4c0.6-0.6,0.6-1.5,0-2.1L17.3,14.8z"/></svg>    </brick>         <brick id="buttonsComplementsBrick">    '+ complementsComposer()[0] +'    </brick>         <brick id="fatherBrick">            <brick id="mainNotificationBrick">            <brick id="titleBrick">' + byLanguage("How would you describe your experience?","Califique su experiencia.") + '</brick>            <brick id="paragraphBrick">' + byLanguage('Powered by '+ tellerSmallA,'Con el poder de '+ tellerSmallA) + '</brick>        </brick>                <brick id="feedbackBrick">            <brick id="emojisBrick">                <brick id="emojiBrick1">                    <brick id="emojiFaceBrick1"><svg id="SuperFaceTeller" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs></defs><g><circle class="tellersFace" cx="20" cy="20" r="20"/><g><path class="tellersGesture" d="M27.17,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,27.17,13.58Z"/><path class="tellersGesture" d="M14.34,15.09a1.51,1.51,0,1,0-1.51,1.51A1.52,1.52,0,0,0,14.34,15.09Z"/><path class="tellersGesture" d="M25.5,20.89h-11a1,1,0,0,0-.79.37,1,1,0,0,0-.19.85A6.32,6.32,0,0,0,20,26.66c4.44,0,6.18-3,6.49-4.58a1,1,0,0,0-.21-.83A1,1,0,0,0,25.5,20.89Z"/></g></g></svg></brick>                    <brick id="emojiDescriptionBrick1">Super</brick>                </brick>                <brick id="emojiBrick2">                        <brick id="emojiFaceBrick2"><svg id="GoodFaceTeller" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs></defs><g><circle class="tellersFace" cx="20" cy="20" r="20"/><g><path class="tellersGesture" d="M27.17,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,27.17,13.58Z"/><path class="tellersGesture" d="M14.34,15.09a1.51,1.51,0,1,0-1.51,1.51A1.52,1.52,0,0,0,14.34,15.09Z"/><path class="tellersGesture" d="M25,20.71a8.54,8.54,0,0,1-5,1.34,8.47,8.47,0,0,1-5-1.34,1,1,0,1,0-1.28,1.53A10.17,10.17,0,0,0,20,24.05a10.17,10.17,0,0,0,6.3-1.81A1,1,0,1,0,25,20.71Z"/></g></g></svg></brick>                        <brick id="emojiDescriptionBrick2">' + byLanguage("Good","Buena") + '</brick>                </brick>                <brick id="emojiBrick3">                        <brick id="emojiFaceBrick3"><svg id="NeutralFaceTeller" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs></defs><g><circle class="tellersFace" cx="20" cy="20" r="20"/><g><path class="tellersGesture" d="M27.17,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,27.17,13.58Z"/><path class="tellersGesture" d="M12.83,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,12.83,13.58Z"/><path class="tellersGesture" d="M23.47,22.4H16.53a1,1,0,0,0,0,2h6.94a1,1,0,0,0,0-2Z"/></g></g></svg></brick>                        <brick id="emojiDescriptionBrick3">Neutral</brick>                </brick>                <brick id="emojiBrick4">                        <brick id="emojiFaceBrick4"><svg id="BadFaceTeller" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs></defs><g><circle class="tellersFace" cx="20" cy="20" r="20"/><g><path class="tellersGesture" d="M27.17,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,27.17,13.58Z"/><path class="tellersGesture" d="M14.34,15.09a1.51,1.51,0,1,0-1.51,1.51A1.52,1.52,0,0,0,14.34,15.09Z"/><path class="tellersGesture" d="M20,20.47a10.18,10.18,0,0,0-6.3,1.82A1,1,0,1,0,15,23.82a8.46,8.46,0,0,1,5-1.35,8.46,8.46,0,0,1,5,1.35,1,1,0,0,0,.64.23,1,1,0,0,0,.64-1.76A10.18,10.18,0,0,0,20,20.47Z"/></g></g></svg></brick>                        <brick id="emojiDescriptionBrick4">' + byLanguage("Bad","Mala") + '</brick>                </brick>                <brick id="emojiBrick5">                        <brick id="emojiFaceBrick5"><svg id="FuriousFaceTeller" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs></defs><g><circle class="tellersFace" cx="20" cy="20" r="20"/><g><path class="tellersGesture" d="M27.17,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,27.17,13.58Z"/><path class="tellersGesture" d="M14.34,15.09a1.51,1.51,0,1,0-1.51,1.51A1.52,1.52,0,0,0,14.34,15.09Z"/><path class="tellersGesture" d="M20,20.13c-4.44,0-6.18,3-6.49,4.59a1,1,0,0,0,.21.82,1,1,0,0,0,.78.37h11a1,1,0,0,0,.79-.38,1,1,0,0,0,.19-.84A6.32,6.32,0,0,0,20,20.13Z"/></g></g></svg></brick>                        <brick id="emojiDescriptionBrick5">' + byLanguage("Furious","Furiosa") + '</brick>                </brick>                <brick id="emojiSelectorBrick"></brick>            </brick>            <brick id="textAreasBrick">                <textarea id="textAreaBrick" placeholder="' + byLanguage("How would you describe your experience?","Compartanos su experiencia.") + '"></textarea>            </brick>            <brick id="inputAreasBrick">                <input id="inputAreaBrick" placeholder="' + byLanguage("email@example.com","correo@ejemplo.com") + '"></input>            </brick>            <brick id="actionButtonBrick">' + byLanguage("NEXT","SIG.") + '</brick>            <brick id="skipButtonBrick">' + byLanguage("Skip","Omitir") + '</brick>            <brick id="notificationParagraphBrick"></brick>        </brick>            <brick id="sharedComponentsArea">            <brick id="imagenPerfilOperator" src="none" alt="teller Operator"><brick id="stateLight"></brick></brick>            <brick id="operatorBrick">'+ operatorData()[0] +'</brick>            <brick id="stateBrick">'+ operatorData()[1] +'</brick>            <brick id="platformBoxBrick"><brick id="bubbleWelcome">...</brick></brick>        </brick>            <brick id="whatsappArea">            <input id="textAreaWsp" placeholder="' + byLanguage("Send us a message","Escribe un mensaje.") + '"></input>            <brick id="wspSendButtonBrick">' + wspSendButtonIcon +'</brick>        </brick>            <brick id="telegramArea">            <input id="textAreaTelegram" placeholder="' + byLanguage("Join us in Telegram","Unetenos en Telegram.") + '"></input>            <brick id="telegramSendButtonBrick">' + telegramSendButtonIcon +'</brick>        </brick>        <brick id="messengerArea">            <a id="messengerSendButtonBrick">'+ byLanguage("Send us a message","Envienos un mensaje") + messengerSendButtonIcon +'</a>        </brick>        </brick>'
 
     //Detect browser section /////Must go out
     function detectBrowser(){
@@ -2045,7 +2038,6 @@ function kiujdgrsghsss(){
 
         //Main Button Notification
         const hoverBrick = document.getElementById("hoverBrick");
-        const hoverBrickClose = document.getElementById("hoverBrickClose");
 
         //Global Components
         const mainNotificationBrick = document.getElementById("mainNotificationBrick");
@@ -2214,7 +2206,7 @@ function kiujdgrsghsss(){
         //Apagar boton
         function offButtonBrick(o){
             setTimeout(function(){
-                o.style.fill = byTheme(nebulaGrey,realGrey);
+                o.style.fill = byTheme(nebulaGrey,screenCharmingGrey);
             },300);
         }
 
@@ -2247,7 +2239,7 @@ function kiujdgrsghsss(){
             hmm(mainNotificationBrick);
             setTimeout(function(){
                 if(tellerUseFeedback){
-                feedbackIconShape.style.fill = byTheme(nebulaGrey,realGrey);
+                feedbackIconShape.style.fill = byTheme(nebulaGrey,screenCharmingGrey);
                 }
             },300);
         }
@@ -2255,7 +2247,7 @@ function kiujdgrsghsss(){
         //Show teller components
         function showTellerComponents(){
             //Change color to button selected
-            feedbackIconShape.style.fill = userColor();
+            feedbackIconShape.style.fill = byTheme(realWhite,charmingGrey);
             smg(fatherBrick)
             smm(feedbackBrick)
             smm(mainNotificationBrick)
@@ -2271,7 +2263,7 @@ function kiujdgrsghsss(){
             //Resize fatherBrick
             setTimeout(function(){
                 //Change color to button selected
-                messengerIconShape.style.fill = realWhite;
+                messengerIconShape.style.fill = byTheme(realWhite,charmingGrey);
                 //Show messenger parts
                 platformBoxBrick.style.height = "190px";
                 platformBoxBrick.style.bottom = "0";
@@ -2299,7 +2291,7 @@ function kiujdgrsghsss(){
             //Resize fatherBrick
             setTimeout(function(){
                 //Change color to button selected
-                whatsappIconShape.style.fill = realWhite;
+                whatsappIconShape.style.fill = byTheme(realWhite,charmingGrey);
                 //Restyle shared components
                 platformBoxBrick.style.height = "120px";
                 platformBoxBrick.style.bottom = "70px";
@@ -2327,7 +2319,7 @@ function kiujdgrsghsss(){
             //Resize fatherBrick
             setTimeout(function(){
                 //Change color to button selected
-                telegramIconShape.style.fill = realWhite;
+                telegramIconShape.style.fill = byTheme(realWhite,charmingGrey);
                 //Restyle shared components
                 platformBoxBrick.style.height = "120px";
                 platformBoxBrick.style.bottom = "70px";
@@ -2426,11 +2418,6 @@ function kiujdgrsghsss(){
             toTelegram()
         })
 
-        //By main button
-        hoverBrickClose.addEventListener("click", function() {
-            hmm(hoverBrick);
-        });
-
         ////By main button
         buttonFatherBrick.addEventListener("click", function() {
             hmm(hoverBrick);
@@ -2457,7 +2444,7 @@ function kiujdgrsghsss(){
                 if(tellerUseMessenger){offButtonBrick(messengerIconShape)};
                 if(tellerUseWsp){offButtonBrick(whatsappIconShape)};
                 if(tellerUseTelegram){offButtonBrick(telegramIconShape)};
-                if(tellerUseFeedback){feedbackIconShape.style.fill = byTheme(nebulaGrey,realGrey)};
+                if(tellerUseFeedback){feedbackIconShape.style.fill = byTheme(nebulaGrey,screenCharmingGrey)};
                 //Main Button animation
                 palomita.style.opacity = "0";
                 palomita.style.transform = "scaleX(0)";
