@@ -70,7 +70,7 @@ Estas instrucciones te permitirán crear tu botón de chat y agregarlo a tu proy
 
 - side: Lugar en la pantalla donde se ubicará el botón ("left" si quieres que aparezca a la izquierda, o "right" si quieres que aparezca a la derecha, en caso que lo dejes en blanco aparecera a la derecha de forma predeterminada.)
 
-- borderRadius: Redonde del botón y de la barra de complementos. (Recomendado: 5 ó 25);
+- borderRadius: Redonde del botón y de la barra de complementos. (Recomendado: 10 ó 25);
 
 - theme: Tema del widget, puedes elegír entre light ó dark.
 
