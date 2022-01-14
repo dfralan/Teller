@@ -1820,6 +1820,12 @@ function kiujdgrsghsss(){
         },300);
     }
 
+    //showMyEmojiMan(x: object that u wanna show man)
+    function smem(x){
+        x.style.display = "block";
+        x.style.opacity = "1";
+    }
+
     //minify my opacity men
     function mmom(x){
         x.style.opacity = "0.25"; 
@@ -2589,8 +2595,8 @@ function kiujdgrsghsss(){
             emojiFaceBrick1.style.transform="translateY(-10px)";
             SuperFaceTeller.style.animationPlayState = "running";
             if(!emotionSelected){
-            smm(emojiDescriptionBrick1);
-            smm(emojiBrick1);
+            smem(emojiDescriptionBrick1);
+            smem(emojiBrick1);
             mmom(emojiBrick2);
             mmom(emojiBrick3);
             mmom(emojiBrick4);
@@ -2611,8 +2617,8 @@ function kiujdgrsghsss(){
             emojiFaceBrick2.style.transform="translateY(-10px)";
             GoodFaceTeller.style.animationPlayState = "running";
             if(!emotionSelected){
-            smm(emojiDescriptionBrick2);
-            smm(emojiBrick2);
+            smem(emojiDescriptionBrick2);
+            smem(emojiBrick2);
             mmom(emojiBrick1);
             mmom(emojiBrick3); 
             mmom(emojiBrick4); 
@@ -2633,8 +2639,8 @@ function kiujdgrsghsss(){
             emojiFaceBrick3.style.transform="translateY(-10px)";
             NeutralFaceTeller.style.animationPlayState = "running";
             if(!emotionSelected){
-            smm(emojiDescriptionBrick3);
-            smm(emojiBrick3);
+            smem(emojiDescriptionBrick3);
+            smem(emojiBrick3);
             mmom(emojiBrick1);
             mmom(emojiBrick2);
             mmom(emojiBrick4); 
@@ -2655,8 +2661,8 @@ function kiujdgrsghsss(){
             emojiFaceBrick4.style.transform="translateY(-10px)";
             BadFaceTeller.style.animationPlayState = "running";
             if(!emotionSelected){
-            smm(emojiDescriptionBrick4);
-            smm(emojiBrick4);
+            smem(emojiDescriptionBrick4);
+            smem(emojiBrick4);
             mmom(emojiBrick1);
             mmom(emojiBrick2);
             mmom(emojiBrick3);
@@ -2677,8 +2683,8 @@ function kiujdgrsghsss(){
             emojiFaceBrick5.style.transform="translateY(-10px)";
             FuriousFaceTeller.style.animationPlayState = "running";
             if(!emotionSelected){
-            smm(emojiDescriptionBrick5);
-            smm(emojiBrick5);
+            smem(emojiDescriptionBrick5);
+            smem(emojiBrick5);
             mmom(emojiBrick1);
             mmom(emojiBrick2)
             mmom(emojiBrick3);
