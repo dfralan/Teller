@@ -23,24 +23,25 @@ function kiujdgrsghsss(){
     var emotionTeller = "";
     var messageTeller = "";
     var emailTeller = "";
+    //CSS Repetitions
+    const transitionChill = '.3s!important;-webkit-transition: .3s!important;-moz-transition: .3s!important;-o-transition: .3s!important;'
+    const animationStandard = '1;animation-direction: normal!important;animation-play-state: paused;animation-duration: 2s!important;animation-timing-function: ease-all!important;animation-iteration-count: infinite!important;cursor: pointer!important;'
+    const emojiBrickStyle = 'transition:'+transitionChill+'position: absolute!important;opacity: 0.25;background-color: transparent!important;width: 60px!important;height: 80px!important;left: 0!important;top: 0!important;text-align: center!important;cursor: pointer!important;'
     //Color Palette
     const almostBlack = '#0D1418';
-    const realWhite = '#FFFFFF';
+    const realWhite = 'white';
     const nebulaGrey = '#E8E8E8';
     const realGrey = '#808080';
     const charmingGrey = '#2A2F32';
-    const screenCharmingGrey = 'rgba(42,47,50,0.2)';
     const onlineGreen = '#31A24C';
     const tellerGreen = '#03D79C';
     const telegramBlue = '#2AA2C6';
-    const screenGrey = 'rgba(0,0,0,0.2)';
-    const screenWhite = 'rgba(255,255,255,0.3)';
-    //Platform Buttons
+    //Platform Main Buttons
     const feedbackMainButton = '<svg id="buttonFeedbackBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><circle class="transparentBG" cx="25" cy="25" r="25"/><path id="feedbackIconShape" d="M25,0C11.2,0,0,11.2,0,25s11.2,25,25,25s25-11.2,25-25S38.8,0,25,0z M38.5,12.8L21.2,39.4c-0.3,0.4-0.9,0.2-0.9-0.3l-0.7-13.1c0-0.2-0.2-0.4-0.4-0.5l-8.8-1.3c-0.5-0.1-0.6-0.8-0.1-1L37.8,12C38.3,11.9,38.7,12.4,38.5,12.8z"/></svg>'
     const messengerMainButton = '<svg id="buttonMessengerBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><circle class="transparentBG" cx="25" cy="25" r="25"/><path id="messengerIconShape" d="M25,0C11.5,0,0.5,11.1,0.7,24.5c0.1,6.8,3,12.9,7.5,17.3c0.5,0.5,0.8,1.2,0.8,1.9v4.1c0,1.5,1.6,2.6,3.1,1.9 l4.5-2c0.6-0.3,1.2-0.3,1.8-0.1c2,0.6,4.3,0.9,6.5,0.9c13.3,0,24.3-10.9,24.3-24.2C49.2,10.9,38.3,0,25,0z M40,18.5l-7.2,11.4	c-1.2,1.8-3.7,2.3-5.5,1.1l-2-1.4l-3.6-2.5c-0.7-0.5-1.6-0.4-2.2,0.1l-7.2,5.9c-1.2,0.9-2.7-0.5-1.9-1.7L17.5,20c1.2-1.8,3.7-2.3,5.5-1.1l3,2.1l2.6,1.9c0.7,0.5,1.6,0.4,2.2-0.1l7.2-5.9C39.2,15.9,40.8,17.3,40,18.5z"/></svg>';
     const wspMainButton = '<svg id="buttonWhatsappBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><circle class="transparentBG" cx="25" cy="25" r="25"/><path id="whatsappIconShape" d="M42.5,7.4c-4.7-4.6-10.9-7.2-17.6-7.2C11.2,0.2,0,11.3,0,25.1c0,4.7,1.4,9.3,3.8,13.2l0.6,0.9l-2.5,9.2l9.4-2.5l0.9,0.5c3.8,2.3,8.2,3.5,12.7,3.5C38.6,49.8,50,38.7,50,24.9C50,18.3,47.2,12.1,42.5,7.4z M39.5,35.7c-0.6,1.8-3.6,3.3-5,3.6c-2.4,0.3-4.2,0.2-9-1.9C18,34.2,13.1,26.6,12.8,26.1c-0.3-0.5-3-4.1-3-7.7s1.9-5.4,2.6-6.3c0.6-0.7,1.5-0.9,2-0.9s1,0,1.5,0 c0.4,0,1-0.2,1.7,1.3c0.6,1.5,2.1,5.1,2.3,5.5c0.2,0.4,0.3,0.8,0.1,1.3c-1.5,2.8-2.9,2.7-2.2,4.1c2.9,4.9,5.8,6.7,10.1,8.9 c0.7,0.4,1.2,0.3,1.6-0.2c0.4-0.5,1.9-2.2,2.4-2.9c0.5-0.7,1-0.6,1.7-0.4c0.6,0.2,4.4,2.1,5.1,2.4c0.7,0.4,1.3,0.5,1.5,0.8 C40.2,32.5,40.2,33.9,39.5,35.7z"/></svg>';
     const telegramMainButton = '<svg id="buttonTelegramBrick" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><circle class="transparentBG" cx="25" cy="25" r="25"/><path id="telegramIconShape" d="M25,0C11.2,0,0,11.2,0,25s11.2,25,25,25s25-11.2,25-25S38.8,0,25,0z M36.9,16.3c-0.1,1-0.7,4.6-1.2,8.4L33.9,36	c0,0-0.1,1.7-1.4,2c-1.2,0.3-3.3-1-3.6-1.3c-0.3-0.2-5.4-3.5-7.3-5.1c-0.5-0.4-1.1-1.3,0.1-2.3c2.6-2.4,5.7-5.3,7.6-7.2	c0.9-0.9,1.7-2.9-1.9-0.4l-10.2,6.9c0,0-1.2,0.7-3.3,0.1C11.7,27.9,9.2,27,9.2,27s-1.8-1.1,1.2-2.2l16.8-6.9c1.7-0.7,7.3-3,7.3-3 S37.1,13.9,36.9,16.3z"/></svg>';
-    
+    //Platform Components Buttons
     const wspSendButtonIcon = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><circle class="transparentBG" cx="20" cy="20" r="20"/><polygon id="wspSendButtonSVG" points="21.6,15.3 12.3,11 12.3,17.9 21.8,19.6 12.3,21.4 12.3,28.3 21.6,24 31,19.6 	"/></svg>'
     const messengerSendButtonIcon = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="29px" height="29.8px" viewBox="0 0 29 29.8" style="overflow:visible;enable-background:new 0 0 29 29.8;" xml:space="preserve"><path id="messengerIconFull" d="M14.5,0C6.4,0-0.1,6.6,0,14.6c0,4.1,1.8,7.7,4.5,10.3C4.8,25.3,5,25.7,5,26.1v2.4c0,0.9,1,1.6,1.8,1.2l2.7-1.2c0.4-0.2,0.7-0.2,1.1-0.1c1.2,0.3,2.6,0.5,3.9,0.5c8,0,14.5-6.5,14.5-14.5C29,6.5,22.5,0,14.5,0z M23.5,11.1l-4.3,6.8c-0.7,1.1-2.2,1.4-3.3,0.6l-1.2-0.9l-2.1-1.5c-0.4-0.3-0.9-0.3-1.3,0l-4.3,3.5c-0.7,0.6-1.7-0.3-1.2-1l4.3-6.8c0.7-1.1,2.2-1.4,3.3-0.6l1.8,1.3l1.6,1.1c0.4,0.3,0.9,0.3,1.3,0l4.3-3.5C23,9.5,24,10.3,23.5,11.1z"/></svg>'
     const telegramSendButtonIcon = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="overflow:visible;enable-background:new 0 0 50 50;" xml:space="preserve"><circle class="transparentBG" cx="20" cy="20" r="20"/><path id="telegramSendButtonSVG" d="M27.5,19.2l-13.5-6.9c-0.6-0.3-1.4,0.2-1.3,0.9l0.7,5c0.1,0.4,0.4,0.7,0.7,0.7l7.7,0.8c0.2,0,0.2,0.4,0,0.4L14.2,21c-0.4,0-0.7,0.3-0.7,0.7l-0.7,5c-0.1,0.7,0.6,1.2,1.3,0.9l13.5-6.9C28.2,20.5,28.2,19.5,27.5,19.2z"/></svg>'
@@ -55,7 +56,6 @@ function kiujdgrsghsss(){
     var dateTeller = new Date();
     //Regex section
     const regexMail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    const regexHourInterval = /^([0-1]?[0-9]|2?[0-3]|[0-9])[:\-\/]([0-1]?[0-9]|2?[0-3]|[0-9])$/;
     const regexMsg = /^[\a-zA-Z\d\s:\u00C0-\u00FF.,¡!¿?]+$/;
     //Elements specified
     var tellerUseWsp = false;
@@ -78,7 +78,7 @@ function kiujdgrsghsss(){
     const styleSheetTeller = '<style>\
     @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;600&display=swap");\
     '+ fixScaleOnIE()+'\
-    teller {\
+    teller{\
         display:'+ complementsComposer()[2]+';\
         position: fixed!important;\
         z-index: 100000;\
@@ -89,22 +89,18 @@ function kiujdgrsghsss(){
     .transparentBG{\
         fill: transparent !important;\
     }\
-    #hoverBrick {\
-        box-shadow: 0 1px 2px rgba(0,0,0,0.2);\
-        display:none;\
+    #hoverBrick{\
+        transition:'+transitionChill+'\
         opacity: 0;\
+        display:none;\
         position: absolute!important;\
         bottom: 7px!important;\
         '+ getSide()[0] +': 70px!important;\
-        transition:  .3s !important;\
-        -webkit-transition:  .3s !important;\
-        -moz-transition:  .3s !important;\
-        -o-transition:  .3s !important;\
         border-radius: 5px;\
         white-space: nowrap;\
         width: auto!important;\
         height: auto!important;\
-        padding: 8px 10px 10px 10px;\
+        padding: 6px 10px 10px 10px !important;\
         text-align: left;\
         font-weight: 200!important;\
         font-size: small!important;\
@@ -113,21 +109,18 @@ function kiujdgrsghsss(){
         background-color: '+  byTheme(charmingGrey,realWhite) +'!important;\
     }\
     #hoverBrick:after{\
+        top:10px;\
         content:"";\
         border-style:solid;\
         position:absolute;\
-        top:10px;\
-        border-width: '+ getSide()[3] +';\
-        border-color: '+ getSide()[2] +';\
         '+ getSide()[0] +':-7px;\
+        border-color: '+ getSide()[2] +';\
+        border-width: '+ getSide()[3] +';\
       }\
-    #buttonFatherBrick {\
-        box-shadow: 0 1px 2px rgba(0,0,0,0.2);\
+    #buttonFatherBrick{\
+        transition:'+transitionChill+'\
         opacity: 1;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
+        box-shadow: 0 1px 2px rgba(0,0,0,0.2);\
         position: absolute!important;\
         background-color: '+ byTheme(realWhite, charmingGrey) +'!important;\
         width: 50px;\
@@ -137,24 +130,18 @@ function kiujdgrsghsss(){
         border-radius: '+ userBorderRadius() +'px;\
         cursor: pointer!important;\
     }\
-    #buttonFatherBrick svg {\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
+    #buttonFatherBrick svg{\
+        transition:'+transitionChill+'\
     }\
     \
-    #buttonFatherBrick svg:hover {\
+    #buttonFatherBrick svg:hover{\
         transform: scale(1.05);\
     }\
     \
-    #buttonFeedbackBrick {\
+    #buttonFeedbackBrick{\
+        transition:'+transitionChill+'\
         opacity: 1;\
         display: inline-block\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
         background-color: transparent;\
         width: 35px;\
         height: 35px;\
@@ -163,27 +150,20 @@ function kiujdgrsghsss(){
         border: none!important;\
         cursor: pointer!important;\
     }\
-    #buttonFeedbackBrick:hover {\
-        transform: translateY(-2px);\
+    #buttonFeedbackBrick:hover{\
+        opacity: 0.8;\
     }\
-    \
-    #feedbackIconShape{/* \
-        stroke:rgba(0, 0, 0, 0.2);\
-        stroke-width:.5;\
-        stroke-miterlimit:10; */\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
+    #feedbackBrick{\
+        transition:'+transitionChill+'\
+    }\
+    #feedbackIconShape{\
+        transition:'+transitionChill+'\
         fill:'+ byTheme(realWhite,charmingGrey)+';\
     }\
-    #fatherBrick {\
-        display: none;\
+    #fatherBrick{\
+        transition:'+transitionChill+'\
         opacity: 0;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
+        display: none;\
         font-family: "Outfit", sans-serif;\
         position: absolute!important;\
         background-color:'+byTheme(realWhite,charmingGrey)+'!important;\
@@ -195,41 +175,24 @@ function kiujdgrsghsss(){
         transform: translateY(10px);\
         box-shadow: 0 0 10px rgba(0,0,0,0.2);\
     }\
-    #xBrick {\
+    #xBrick{\
+        transition:'+transitionChill+'\
         opacity: 0;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;    \
         fill: '+ userColor() +'!important;\
         transform: translateX(30px) scaleX(0);\
     }\
-    #palomita {\
+    #palomita{\
+        transition:'+transitionChill+'\
         opacity: 1;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;    \
         fill: '+ userColor() +'!important;\
         transform: scaleX(1);\
     }\
-    .questBrick {\
+    #titleBrick{\
+        transition:'+transitionChill+'\
+        position: absolute!important;\
         opacity: 1;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        fill: #cecece;\
-    }\
-    #titleBrick {\
         font-weight: 200;\
         color:'+byTheme(almostBlack,realWhite)+'!important;\
-        opacity: 1;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        position: absolute!important;\
         background-color: transparent!important;\
         width: 300px!important;\
         height: auto!important;\
@@ -237,13 +200,10 @@ function kiujdgrsghsss(){
         top: 20px!important;\
         text-align: center!important;\
     }\
-    #emojisBrick {\
-        opacity: 1;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
+    #emojisBrick{\
+        transition:'+transitionChill+'\
         position: absolute!important;\
+        opacity: 1;\
         background-color: transparent!important;\
         width: 300px!important;\
         height: 80px!important;\
@@ -251,13 +211,10 @@ function kiujdgrsghsss(){
         top: 60px;\
         text-align: center!important;\
     }\
-    #emojiSelectorBrick {\
-        opacity: 0;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
+    #emojiSelectorBrick{\
+        transition:'+transitionChill+'\
         position: absolute!important;\
+        opacity: 0;\
         background-color: #eaeaeb!important;\
         width: 10px!important;\
         height: 10px!important;\
@@ -266,102 +223,39 @@ function kiujdgrsghsss(){
         bottom: -7px!important;\
         text-align: center!important;\
     }\
-    #emojiBrick1 {\
-        opacity: 0.25;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        position: absolute!important;\
-        background-color: transparent!important;\
-        width: 60px!important;\
-        height: 80px!important;\
-        left: 0!important;\
-        top: 0!important;\
-        text-align: center!important;\
-        cursor: pointer!important;\
+    #emojiBrick1{'+ emojiBrickStyle +'\
+        left: 0px!important;\
     }\
     #emojiBrick1:hover>#emojiDescriptionBrick1 {\
         opacity: 1!important;\
     }\
-    #emojiBrick2 {\
-        opacity: 0.25;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        position: absolute!important;\
-        background-color: transparent!important;\
-        width: 60px!important;\
-        height: 80px!important;\
+    #emojiBrick2{'+ emojiBrickStyle +'\
         left: 60px!important;\
-        top: 0!important;\
-        text-align: center!important;\
-        cursor: pointer!important;\
     }\
-    #emojiBrick2:hover>#emojiDescriptionBrick2 {\
+    #emojiBrick2:hover > #emojiDescriptionBrick2{\
         opacity: 1!important;\
     }\
-    #emojiBrick3 {\
-        opacity: 0.25;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        position: absolute!important;\
-        background-color: transparent!important;\
-        width: 60px!important;\
-        height: 80px!important;\
+    #emojiBrick3{'+ emojiBrickStyle +'\
         left: 120px!important;\
-        top: 0!important;\
-        text-align: center!important;\
-        cursor: pointer!important;\
     }\
-    #emojiBrick3:hover>#emojiDescriptionBrick3 {\
+    #emojiBrick3:hover>#emojiDescriptionBrick3{\
         opacity: 1!important;\
     }\
-    #emojiBrick4 {\
-        opacity: 0.25;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        position: absolute!important;\
-        background-color: transparent!important;\
-        width: 60px!important;\
-        height: 80px!important;\
+    #emojiBrick4{'+ emojiBrickStyle +'\
         left: 180px!important;\
-        top: 0!important;\
-        text-align: center!important;\
-        cursor: pointer!important;\
     }\
-    #emojiBrick4:hover>#emojiDescriptionBrick4 {\
+    #emojiBrick4:hover>#emojiDescriptionBrick4{\
         opacity: 1!important;\
     }\
-    #emojiBrick5 {\
-        opacity: 0.25;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        position: absolute!important;\
-        background-color: transparent!important;\
-        width: 60px!important;\
-        height: 80px!important;\
+    #emojiBrick5{'+ emojiBrickStyle +'\
         left: 240px!important;\
-        top: 0!important;\
-        text-align: center!important;\
-        cursor: pointer!important;\
     }\
-    #emojiBrick5:hover>#emojiDescriptionBrick5 {\
+    #emojiBrick5:hover>#emojiDescriptionBrick5{\
         opacity: 1!important;\
     }\
-    #emojiFaceBrick1 {\
+    #emojiFaceBrick1{\
+        transition:'+transitionChill+'\
         opacity: 1!important;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
         position: absolute!important;\
         background-color: '+ byTheme(charmingGrey,nebulaGrey) +';\
         width: 40px!important;\
@@ -371,12 +265,9 @@ function kiujdgrsghsss(){
         top: 10px!important;\
         cursor: pointer!important;\
     }\
-    #emojiFaceBrick2 {\
+    #emojiFaceBrick2{\
+        transition:'+transitionChill+'\
         opacity: 1!important;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
         position: absolute!important;\
         background-color: '+ byTheme(charmingGrey,nebulaGrey) +';\
         width: 40px!important;\
@@ -386,12 +277,9 @@ function kiujdgrsghsss(){
         top: 10px!important;\
         cursor: pointer!important;\
     }\
-    #emojiFaceBrick3 {\
+    #emojiFaceBrick3{\
+        transition:'+transitionChill+'\
         opacity: 1!important;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
         position: absolute!important;\
         background-color: '+ byTheme(charmingGrey,nebulaGrey) +';\
         width: 40px!important;\
@@ -401,12 +289,9 @@ function kiujdgrsghsss(){
         top: 10px!important;\
         cursor: pointer!important;\
     }\
-    #emojiFaceBrick4 {\
+    #emojiFaceBrick4{\
+        transition:'+transitionChill+'\
         opacity: 1!important;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
         position: absolute!important;\
         background-color: '+ byTheme(charmingGrey,nebulaGrey) +';\
         width: 40px!important;\
@@ -416,12 +301,9 @@ function kiujdgrsghsss(){
         top: 10px!important;\
         cursor: pointer!important;\
     }\
-    #emojiFaceBrick5 {\
+    #emojiFaceBrick5{\
+        transition:'+transitionChill+'\
         opacity: 1!important;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
         position: absolute!important;\
         background-color: '+ byTheme(charmingGrey,nebulaGrey) +';\
         width: 40px!important;\
@@ -431,71 +313,38 @@ function kiujdgrsghsss(){
         top: 10px!important;\
         cursor: pointer!important;\
     }\
-    #SuperFaceTeller {\
-        opacity: 1;\
+    #SuperFaceTeller{\
         animation-name: Super!important;\
-        animation-direction: normal!important;\
-        animation-play-state: paused;\
-        animation-duration: 2s!important;\
-        animation-timing-function: ease-all!important;\
-        animation-iteration-count: infinite!important;\
-        cursor: pointer!important;\
+        opacity:'+animationStandard+'\
     }\
-    #GoodFaceTeller {\
-        opacity: 1;\
+    #GoodFaceTeller{\
         animation-name: Good!important;\
-        animation-direction: normal!important;\
-        animation-play-state: paused;\
-        animation-duration: 2s!important;\
-        animation-timing-function: ease-all!important;\
-        animation-iteration-count: infinite!important;\
-        cursor: pointer!important;\
+        opacity:'+animationStandard+'\
     }\
-    #NeutralFaceTeller {\
-        opacity: 1;\
+    #NeutralFaceTeller{\
         animation-name: Neutral!important;\
-        animation-direction: normal!important;\
-        animation-play-state: paused;\
-        animation-duration: 2s!important;\
-        animation-timing-function: ease-all!important;\
-        animation-iteration-count: infinite!important;\
-        cursor: pointer!important;\
+        opacity:'+animationStandard+'\
     }\
-    #BadFaceTeller {\
-        opacity: 1;\
+    #BadFaceTeller{\
         animation-name: Bad!important;\
-        animation-direction: normal!important;\
-        animation-play-state: paused;\
-        animation-duration: 2s!important;\
-        animation-timing-function: ease-all!important;\
-        animation-iteration-count: infinite!important;\
-        cursor: pointer!important;\
+        opacity:'+animationStandard+'\
     }\
-    #FuriousFaceTeller {\
-        opacity: 1;\
+    #FuriousFaceTeller{\
         animation-name: Furious!important;\
-        animation-direction: normal!important;\
-        animation-play-state: paused;\
-        animation-duration: 2s!important;\
-        animation-timing-function: ease-all!important;\
-        animation-iteration-count: infinite!important;\
-        cursor: pointer!important;\
+        opacity:'+animationStandard+'\
     }\
-    .tellersFace {\
+    .tellersFace{\
         fill: none!important;\
     }\
-    .tellersGesture {\
+    .tellersGesture{\
         fill: '+byTheme(realWhite,almostBlack)+'!important;\
     }\
-    #emojiDescriptionBrick1 {\
-        color:'+byTheme(almostBlack,realWhite)+'!important;\
-        opacity: 0;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        font-size: small!important;\
+    #emojiDescriptionBrick1{\
+        transition:'+transitionChill+'\
         position: absolute!important;\
+        opacity: 0;\
+        color:'+byTheme(almostBlack,realWhite)+'!important;\
+        font-size: small!important;\
         background-color: transparent!important;\
         width: 60px!important;\
         height: 20px!important;\
@@ -504,15 +353,12 @@ function kiujdgrsghsss(){
         text-align: center!important;\
         cursor: pointer!important;\
     }\
-    #emojiDescriptionBrick2 {\
-        color:'+byTheme(almostBlack,realWhite)+'!important;\
-        opacity: 0;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        font-size: small!important;\
+    #emojiDescriptionBrick2{\
+        transition:'+transitionChill+'\
         position: absolute!important;\
+        opacity: 0;\
+        color:'+byTheme(almostBlack,realWhite)+'!important;\
+        font-size: small!important;\
         background-color: transparent!important;\
         width: 60px!important;\
         height: 20px!important;\
@@ -521,15 +367,12 @@ function kiujdgrsghsss(){
         text-align: center!important;\
         cursor: pointer!important;\
     }\
-    #emojiDescriptionBrick3 {\
-        color:'+byTheme(almostBlack,realWhite)+'!important;\
-        opacity: 0;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        font-size: small!important;\
+    #emojiDescriptionBrick3{\
+        transition:'+transitionChill+'\
         position: absolute!important;\
+        opacity: 0;\
+        color:'+byTheme(almostBlack,realWhite)+'!important;\
+        font-size: small!important;\
         background-color: transparent!important;\
         width: 60px!important;\
         height: 20px!important;\
@@ -538,15 +381,12 @@ function kiujdgrsghsss(){
         text-align: center!important;\
         cursor: pointer!important;\
     }\
-    #emojiDescriptionBrick4 {\
-        color:'+byTheme(almostBlack,realWhite)+'!important;\
-        opacity: 0;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        font-size: small!important;\
+    #emojiDescriptionBrick4{\
+        transition:'+transitionChill+'\
         position: absolute!important;\
+        opacity: 0;\
+        color:'+byTheme(almostBlack,realWhite)+'!important;\
+        font-size: small!important;\
         background-color: transparent!important;\
         width: 60px!important;\
         height: 20px!important;\
@@ -555,15 +395,12 @@ function kiujdgrsghsss(){
         text-align: center!important;\
         cursor: pointer!important;\
     }\
-    #emojiDescriptionBrick5 {\
-        color:'+byTheme(almostBlack,realWhite)+'!important;\
-        opacity: 0;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        font-size: small!important;\
+    #emojiDescriptionBrick5{\
+        transition:'+transitionChill+'\
         position: absolute!important;\
+        opacity: 0;\
+        color:'+byTheme(almostBlack,realWhite)+'!important;\
+        font-size: small!important;\
         width: 60px!important;\
         height: 20px!important;\
         left: 0!important;\
@@ -571,15 +408,11 @@ function kiujdgrsghsss(){
         text-align: center!important;\
         cursor: pointer!important;\
     }\
-    #textAreasBrick {\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        display: none;\
+    #textAreasBrick{\
+        transition:'+transitionChill+'\
+        position: absolute!important;\
         opacity: 0;\
         display: none;\
-        position: absolute!important;\
         background-color: #eaeaeb!important;\
         width: 340px!important;\
         height: 110px!important;\
@@ -588,11 +421,9 @@ function kiujdgrsghsss(){
         text-align: center!important;\
     }\
     \
-    #textAreaBrick {\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
+    #textAreaBrick{\
+        transition:'+transitionChill+'\
+        position: absolute!important;\
         color: #333!important;\
         resize: none!important;\
         font-family: "Outfit", sans-serif;\
@@ -600,7 +431,6 @@ function kiujdgrsghsss(){
         outline: 0!important;\
         box-shadow: none!important;\
         border: none!important;\
-        position: absolute!important;\
         background-color: transparent!important;\
         width: 300px!important;\
         height: 90px!important;\
@@ -609,14 +439,11 @@ function kiujdgrsghsss(){
         text-align: left!important;\
     }\
     \
-    #inputAreasBrick {\
-        display: none;\
-        opacity: 0;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
+    #inputAreasBrick{\
+        transition:'+transitionChill+'\
         position: absolute!important;\
+        opacity: 0;\
+        display: none;\
         background-color: #eaeaeb!important;\
         width: 340px!important;\
         height: 50px!important;\
@@ -624,16 +451,16 @@ function kiujdgrsghsss(){
         top: 90px!important;\
         text-align: center!important;\
     }\
-    #inputAreaBrick {\
-        color: #333!important;\
+    #inputAreaBrick{\
+        position: absolute!important;\
         opacity: 1;\
+        color: #333!important;\
         resize: none!important;\
         font-family: "Outfit", sans-serif;\
         font-size: medium!important;\
         outline: 0!important;\
         box-shadow: none!important;\
         border: none!important;\
-        position: absolute!important;\
         background-color: transparent!important;\
         width: 300px!important;\
         height: 30px!important;\
@@ -641,37 +468,31 @@ function kiujdgrsghsss(){
         top: 10px!important;\
         text-align: center!important;\
     }\
-    #actionButtonBrick {\
-        display: none;\
-        opacity: 0;\
+    #actionButtonBrick{\
+        transition:'+transitionChill+'\
         position: absolute!important;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
+        opacity: 0;\
+        display: none;\
         bottom: 10px;\
         right: 20px!important;\
         border-radius: 5px;\
         background-color: '+nebulaGrey+';\
         width: 60px!important;\
-        height: 25px!important;\
+        height: 30px!important;\
+        line-height: 28px;\
         font-size: small!important;\
         text-align: center!important;\
-        padding-top: 7px!important;\
         color: '+realWhite+';\
         cursor: pointer!important;\
     }\
-    #actionButtonBrick:hover {\
+    #actionButtonBrick:hover{\
         opacity: .7!important;\
     }\
-    #skipButtonBrick {\
-        display: none;\
-        opacity: 0;\
+    #skipButtonBrick{\
+        transition:'+transitionChill+'\
         position: absolute!important;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
+        opacity: 0;\
+        display: none;\
         bottom: 20px!important;\
         right: 80px!important;\
         border-radius: 5px;\
@@ -685,15 +506,12 @@ function kiujdgrsghsss(){
         cursor: pointer!important;\
         text-decoration: underline!important;\
     }\
-    #paragraphBrick {\
+    #paragraphBrick{\
+        transition:'+transitionChill+'\
+        position: absolute!important;\
+        opacity: 1;\
         color:'+byTheme(almostBlack,realWhite)+'!important;\;\
         text-align: right;\
-        opacity: 1;\
-        position: absolute!important;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
         bottom: 10px!important;\
         right: 20px!important;\
         border-radius: 5px;\
@@ -705,24 +523,21 @@ function kiujdgrsghsss(){
         padding-top: 7px!important;\
         cursor: pointer!important;\
     }\
-    #paragraphBrick a {\
+    #paragraphBrick a{\
         text-decoration: none !important;\
         color:'+byTheme(almostBlack,realWhite)+'!important;\
         font-weight: 600;\
         font-size: x-small;\
     }\
-    #paragraphBrick a svg {\
+    #paragraphBrick a svg{\
         transform: translate(-4px, 3px) scale(.65) !important;\
     }\
-    #notificationParagraphBrick {\
-        display: none;\
-        opacity: 0;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        font-size: small!important;\
+    #notificationParagraphBrick{\
+        transition:'+transitionChill+'\
         position: absolute!important;\
+        opacity: 0;\
+        display: none;\
+        font-size: small!important;\
         background-color: transparent!important;\
         width: 300px!important;\
         height: 10px!important;\
@@ -731,7 +546,7 @@ function kiujdgrsghsss(){
         text-align: center!important;\
         color:'+byTheme(charmingGrey,realWhite)+'!important;\
     }\
-    @keyframes Furious {\
+    @keyframes Furious{\
         0% {\
         transform: translateX(0) translateY(0);\
     }\
@@ -1343,22 +1158,15 @@ function kiujdgrsghsss(){
     }\
     }\
     #sharedComponentsArea{\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        display: none;\
+        transition:'+transitionChill+'\
         opacity: 0;\
+        display: none;\
     }\
     #imagenPerfilOperator{\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
+        transition:'+transitionChill+'\
         position: absolute;\
         left: 20px;\
         top: 20px;\
-        z-index: 1000000000;\
         width: 55px;\
         height: 55px;\
         border-radius: 30px;\
@@ -1368,13 +1176,9 @@ function kiujdgrsghsss(){
         background-size: cover;\
     }\
     #stateLight{\
-        background-color: '+realGrey+';\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        z-index: 10000;\
+        transition:'+transitionChill+'\
         position: absolute;\
+        background-color: '+realGrey+';\
         border-radius: 5px;\
         outline: 3px solid '+byTheme(realWhite,charmingGrey)+'!important;\
         width: 10px;\
@@ -1383,60 +1187,47 @@ function kiujdgrsghsss(){
         top: 45px;\
     }\
     #operatorBrick{\
+        transition:'+transitionChill+'\
+        position: absolute;\
         color: '+byTheme(charmingGrey,realWhite)+'!important;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
         font-size: larger;\
         font-weight: 400;\
         padding: 10px;\
-        z-index: 10000;\
-        position: absolute;\
         left: 80px;\
         top: 15px;\
     }\
     #stateBrick{\
+        transition:'+transitionChill+'\
+        position: absolute;\
         color: '+byTheme(charmingGrey,realWhite)+'!important;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
         font-size: small;\
         font-weight: 200;\
         padding: 10px;\
-        z-index: 10000;\
-        position: absolute;\
         left: 80px;\
         top: 40px;\
     }\
     #platformBoxBrick{\
+        transition:'+transitionChill+'\
+        position: absolute;\
+        outline: 1px solid '+byTheme("rgba(0,0,0,0.03)","rgba(0,0,0,0.1)")+';\
+        outline-offset: -1px;\
         -ms-overflow-style: none;\
         scrollbar-width: none;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
         overflow: auto;\
-        padding: 10px;\
-        position: absolute;\
         left: 0;\
-        bottom: 70px;\
-        width: 320px;\
-        height: 100px;\
+        top: 100px;\
+        width: 100%;\
+        height: 120px;\
         background-color: '+byTheme(nebulaGrey,almostBlack)+';\
     }\
     #platformBoxBrick::-webkit-scrollbar{\
         display: none;\
     }\
     #bubbleWelcome{\
+        transition:'+transitionChill+'\
         display: none;\
-        padding: 10px !important;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        z-index: 1000;\
+        margin: 10px !important;\
+        padding: 6px 10px 10px 10px !important;\
         font-weight: 300;\
         font-size: small;\
         max-width: 180px;\
@@ -1445,13 +1236,10 @@ function kiujdgrsghsss(){
         color: '+byTheme(charmingGrey,realWhite)+'!important;\
         background-color:'+byTheme(realWhite,charmingGrey)+'!important;\;\
     }\
-    #buttonWhatsappBrick {\
+    #buttonWhatsappBrick{\
+        transition:'+transitionChill+'\
         opacity: 1;\
         display: inline-block\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
         background-color: transparent;\
         width: 35px;\
         height: 35px;\
@@ -1460,43 +1248,31 @@ function kiujdgrsghsss(){
         border: none!important;\
         cursor: pointer!important;\
     }\
-    #buttonWhatsappBrick:hover {\
-        transform: translateY(-2px);\
+    #buttonWhatsappBrick:hover{\
+        opacity: 0.8;\
     }\
     \
-    #whatsappIconShape{/* \
-        stroke:rgba(0, 0, 0, 0.2);\
-        stroke-width:.5;\
-        stroke-miterlimit:10; */\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
+    #whatsappIconShape{ \
+        transition:'+transitionChill+'\
         fill:'+ byTheme(realWhite,charmingGrey)+';\
     }\
-    #whatsappArea {\
-        display: none;\
+    #whatsappArea{\
+        transition:'+transitionChill+'\
         opacity: 1;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
+        display: none;\
     }\
     \
-    #textAreaWsp {\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        color: '+byTheme(charmingGrey,realWhite)+'!important;\
+    #textAreaWsp{\
+        transition:'+transitionChill+'\
+        position: absolute!important;\
         opacity: 1;\
+        color: '+byTheme(charmingGrey,realWhite)+'!important;\
         resize: none!important;\
         font-family: "Outfit", sans-serif;\
         font-size: medium!important;\
         outline: 0!important;\
         box-shadow: none!important;\
         border: none!important;\
-        position: absolute!important;\
         background-color: transparent!important;\
         width: 220px!important;\
         height: 20px!important;\
@@ -1505,15 +1281,11 @@ function kiujdgrsghsss(){
         text-align: left!important;\
     }\
     #wspSendButtonBrick{\
-        display: block;\
-        opacity: 1;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        z-index: 200000000000000;\
-        cursor: pointer;\
+        transition:'+transitionChill+'\
         position: absolute;\
+        opacity: 1;\
+        display: block;\
+        cursor: pointer;\
         width: 40px;\
         height: 40px;\
         bottom: 15px;\
@@ -1524,24 +1296,18 @@ function kiujdgrsghsss(){
         text-align: center;\
         text-decoration: none;\
     }\
-    #wspSendButtonBrick:hover {\
+    #wspSendButtonBrick:hover{\
         transform: scale(1.05);\
     }\
     \
     #wspSendButtonSVG{\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
+        transition:'+transitionChill+'\
         fill:#fff\
     }\
-    #buttonTelegramBrick {\
+    #buttonTelegramBrick{\
+        transition:'+transitionChill+'\
         opacity: 1;\
         display: inline-block\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
         background-color: transparent;\
         width: 35px;\
         height: 35px;\
@@ -1550,43 +1316,31 @@ function kiujdgrsghsss(){
         border: none!important;\
         cursor: pointer!important;\
     }\
-    #buttonTelegramBrick:hover {\
-        transform: translateY(-2px);\
+    #buttonTelegramBrick:hover{\
+        opacity: 0.8;\
     }\
     \
-    #telegramIconShape{/* \
-        stroke:rgba(0, 0, 0, 0.2);\
-        stroke-width:.5;\
-        stroke-miterlimit:10; */\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
+    #telegramIconShape{\
+        transition:'+transitionChill+'\
         fill:'+ byTheme(realWhite,charmingGrey)+';\
     }\
-    #telegramArea {\
-        display: none;\
+    #telegramArea{\
+        transition:'+transitionChill+'\
         opacity: 1;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
+        display: none;\
     }\
     \
-    #textAreaTelegram {\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        color: '+byTheme(charmingGrey,realWhite)+'!important;\
+    #textAreaTelegram{\
+        transition:'+transitionChill+'\
+        position: absolute!important;\
         opacity: 1;\
+        color: '+byTheme(charmingGrey,realWhite)+'!important;\
         resize: none!important;\
         font-family: "Outfit", sans-serif;\
         font-size: medium!important;\
         outline: 0!important;\
         box-shadow: none!important;\
         border: none!important;\
-        position: absolute!important;\
         background-color: transparent!important;\
         width: 220px!important;\
         height: 20px!important;\
@@ -1595,15 +1349,11 @@ function kiujdgrsghsss(){
         text-align: left!important;\
     }\
     #telegramSendButtonBrick{\
-        display: block;\
-        opacity: 1;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        z-index: 200000000000000;\
-        cursor: pointer;\
+        transition:'+transitionChill+'\
         position: absolute;\
+        opacity: 1;\
+        display: block;\
+        cursor: pointer;\
         width: 40px;\
         height: 40px;\
         bottom: 15px;\
@@ -1614,23 +1364,17 @@ function kiujdgrsghsss(){
         text-align: center;\
         text-decoration: none;\
     }\
-    #telegramSendButtonBrick:hover {\
+    #telegramSendButtonBrick:hover{\
         transform: scale(1.05);\
     }\
     #telegramSendButtonSVG{\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
+        transition:'+transitionChill+'\
         fill:#fff\
     }\
-    #buttonMessengerBrick {\
+    #buttonMessengerBrick{\
+        transition:'+transitionChill+'\
         opacity: 1;\
         display: inline-block\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
         background-color: transparent;\
         width: 35px;\
         height: 35px;\
@@ -1639,37 +1383,25 @@ function kiujdgrsghsss(){
         border: none!important;\
         cursor: pointer!important;\
     }\
-    #buttonMessengerBrick:hover {\
-        transform: translateY(-2px);\
+    #buttonMessengerBrick:hover{\
+        opacity: 0.8;\
     }\
     \
-    #messengerIconShape{/* \
-        stroke:rgba(0, 0, 0, 0.2);\
-        stroke-width:.5;\
-        stroke-miterlimit:10; */\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
+    #messengerIconShape{\
+        transition:'+transitionChill+'\
         fill:'+ byTheme(realWhite,charmingGrey)+';\
     }\
     #messengerArea{\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        display: none;\
+        transition:'+transitionChill+'\
         opacity: 0;\
+        display: none;\
     }\
     #messengerSendButtonBrick{\
-        display: block;\
-        opacity: 1;\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        cursor: pointer;\
+        transition:'+transitionChill+'\
         position: absolute;\
+        opacity: 1;\
+        display: block;\
+        cursor: pointer;\
         width: 320px;\
         height: 50px;\
         bottom: 10px;\
@@ -1687,35 +1419,159 @@ function kiujdgrsghsss(){
         transform: translate(10px, 10px);\
     }\
     #messengerIconFull{\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
+        transition:'+transitionChill+'\
         fill: white;\
     }\
     #buttonsComplementsBrick{\
+        transition:'+transitionChill+'\
+        position:absolute;\
+        opacity: 0;\
+        display: none '+complementsComposer()[3]+';\
         box-shadow: 0 1px 2px rgba(0,0,0,0.2);\
         white-space: nowrap;\
-        display: '+complementsComposer()[3]+';\
-        transform: translateX(-10px);\
-        transition: .3s!important;\
-        -webkit-transition: .3s!important;\
-        -moz-transition: .3s!important;\
-        -o-transition: .3s!important;\
-        opacity: 0;\
-        z-index: 100000!important;\
-        position:absolute;\
         '+ getSide()[0] +': '+ getSide()[1] +'px;\
         bottom: 0px;\
         background-color: '+ byTheme(realWhite, charmingGrey) +'!important;\
         height: 50px;\
         width: '+complementsComposer()[1]+'px;\
         border-radius: '+ userBorderRadius() +'px;\
-    }</style>'
+    }\
+    #notificationInMainButton{\
+        opacity: 0;\
+        display: none;\
+        transition:'+transitionChill+'\
+        position: absolute;\
+        background-color: '+ tellerGreen +';\
+        '+ getSide()[0] +': 85%;\
+        top: -3px;\
+        color:'+realWhite+';\
+        border-radius: 10px;\
+        width: 14px;\
+        height: 14px;\
+        font-family: "Outfit", sans-serif;\
+        font-size: x-small!important;\
+        line-height: 13px;\
+        text-align: center!important;\
+        cursor: pointer!important;\
+    }\
+    \
+    \
+    \
+    \
+    #notificationInMainButtonPulse{\
+        opacity: 1;\
+        animation-name: Pulse;\
+        animation-play-state: running;\
+        animation-duration: 3s!important;\
+        animation-timing-function: ease-all!important;\
+        animation-iteration-count: infinite!important;\
+        '+ getSide()[0] +': 0;\
+        top: 0;\
+        position:absolute;\
+        width: 14px;\
+        height: 14px;\
+        box-shadow: 0 0 5px '+ tellerGreen +';\
+        outline: 1px solid '+ tellerGreen +';\
+        border-radius: 15px;\
+        transform: scale(.8);\
+        cursor: pointer!important;\
+      }\
+    @keyframes Pulse {\
+    0% {\
+        opacity: 1;\
+        transform: scale(.8);\
+    }\
+    40% {\
+        opacity: 0;\
+        transform: scale(1.4);\
+    }\
+    100% {\
+        opacity: 0;\
+        transform: scale(.8);\
+    }\
+}\
+    </style>'
     
     const asdwertd = ("dbcadceaeea4b522e42b160db3953980"||"d868333ef2514f9979eeefd5713d608d"||"5cf8cb462a3bbacb27968ac14872f094"||"ecaf77a718f3083fa585534aa356126f"||"4c03fdb2a2b92a0ff5b3e56cc636bd37"||"995939e3386cb19d29bf58b1728d7b29"||"d73178e5bcaf544c9cccf98cabbe14b3"||"ddbf6edd990ded708965bae067c8b8b7"||"c594323783ddbac8e206f89fa004e6c4"||"b8dbe52060359d80b37174af8556ec23");
     //Teller full element
-    var tellerBrick = '    <brick id="hoverBrick"></brick>         <brick id="buttonFatherBrick">        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30" ><circle class="tellersFace" cx="15" cy="15" r="15"/><path id="palomita" d="M22.8,7.4l-9.9,15.2c-0.2,0.2-0.5,0.1-0.5-0.1L11.9,15c0-0.1-0.1-0.3-0.3-0.3l-5-0.7c-0.3,0-0.3-0.4-0.1-0.6L22.4,7C22.7,6.8,22.9,7.1,22.8,7.4z"/><path id="xBrick" d="M17.3,14.8l3.7-3.7c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0l-3.7,3.7L11.6,9C11,8.4,10,8.4,9.4,9c-0.6,0.6-0.6,1.5,0,2.1l3.7,3.7l-3.7,3.7c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4c0.4,0,0.8-0.1,1.1-0.4l3.7-3.7l3.7,3.7c0.3,0.3,0.7,0.4,1.1,0.4c0.4,0,0.8-0.1,1.1-0.4c0.6-0.6,0.6-1.5,0-2.1L17.3,14.8z"/></svg>    </brick>         <brick id="buttonsComplementsBrick">    '+ complementsComposer()[0] +'    </brick>         <brick id="fatherBrick">            <brick id="mainNotificationBrick">            <brick id="titleBrick">' + byLanguage("How would you describe your experience?","Califique su experiencia.") + '</brick>            <brick id="paragraphBrick">' + byLanguage('Powered by '+ tellerSmallA,'Con el poder de '+ tellerSmallA) + '</brick>        </brick>                <brick id="feedbackBrick">            <brick id="emojisBrick">                <brick id="emojiBrick1">                    <brick id="emojiFaceBrick1"><svg id="SuperFaceTeller" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs></defs><g><circle class="tellersFace" cx="20" cy="20" r="20"/><g><path class="tellersGesture" d="M27.17,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,27.17,13.58Z"/><path class="tellersGesture" d="M14.34,15.09a1.51,1.51,0,1,0-1.51,1.51A1.52,1.52,0,0,0,14.34,15.09Z"/><path class="tellersGesture" d="M25.5,20.89h-11a1,1,0,0,0-.79.37,1,1,0,0,0-.19.85A6.32,6.32,0,0,0,20,26.66c4.44,0,6.18-3,6.49-4.58a1,1,0,0,0-.21-.83A1,1,0,0,0,25.5,20.89Z"/></g></g></svg></brick>                    <brick id="emojiDescriptionBrick1">Super</brick>                </brick>                <brick id="emojiBrick2">                        <brick id="emojiFaceBrick2"><svg id="GoodFaceTeller" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs></defs><g><circle class="tellersFace" cx="20" cy="20" r="20"/><g><path class="tellersGesture" d="M27.17,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,27.17,13.58Z"/><path class="tellersGesture" d="M14.34,15.09a1.51,1.51,0,1,0-1.51,1.51A1.52,1.52,0,0,0,14.34,15.09Z"/><path class="tellersGesture" d="M25,20.71a8.54,8.54,0,0,1-5,1.34,8.47,8.47,0,0,1-5-1.34,1,1,0,1,0-1.28,1.53A10.17,10.17,0,0,0,20,24.05a10.17,10.17,0,0,0,6.3-1.81A1,1,0,1,0,25,20.71Z"/></g></g></svg></brick>                        <brick id="emojiDescriptionBrick2">' + byLanguage("Good","Buena") + '</brick>                </brick>                <brick id="emojiBrick3">                        <brick id="emojiFaceBrick3"><svg id="NeutralFaceTeller" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs></defs><g><circle class="tellersFace" cx="20" cy="20" r="20"/><g><path class="tellersGesture" d="M27.17,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,27.17,13.58Z"/><path class="tellersGesture" d="M12.83,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,12.83,13.58Z"/><path class="tellersGesture" d="M23.47,22.4H16.53a1,1,0,0,0,0,2h6.94a1,1,0,0,0,0-2Z"/></g></g></svg></brick>                        <brick id="emojiDescriptionBrick3">Neutral</brick>                </brick>                <brick id="emojiBrick4">                        <brick id="emojiFaceBrick4"><svg id="BadFaceTeller" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs></defs><g><circle class="tellersFace" cx="20" cy="20" r="20"/><g><path class="tellersGesture" d="M27.17,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,27.17,13.58Z"/><path class="tellersGesture" d="M14.34,15.09a1.51,1.51,0,1,0-1.51,1.51A1.52,1.52,0,0,0,14.34,15.09Z"/><path class="tellersGesture" d="M20,20.47a10.18,10.18,0,0,0-6.3,1.82A1,1,0,1,0,15,23.82a8.46,8.46,0,0,1,5-1.35,8.46,8.46,0,0,1,5,1.35,1,1,0,0,0,.64.23,1,1,0,0,0,.64-1.76A10.18,10.18,0,0,0,20,20.47Z"/></g></g></svg></brick>                        <brick id="emojiDescriptionBrick4">' + byLanguage("Bad","Mala") + '</brick>                </brick>                <brick id="emojiBrick5">                        <brick id="emojiFaceBrick5"><svg id="FuriousFaceTeller" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs></defs><g><circle class="tellersFace" cx="20" cy="20" r="20"/><g><path class="tellersGesture" d="M27.17,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,27.17,13.58Z"/><path class="tellersGesture" d="M14.34,15.09a1.51,1.51,0,1,0-1.51,1.51A1.52,1.52,0,0,0,14.34,15.09Z"/><path class="tellersGesture" d="M20,20.13c-4.44,0-6.18,3-6.49,4.59a1,1,0,0,0,.21.82,1,1,0,0,0,.78.37h11a1,1,0,0,0,.79-.38,1,1,0,0,0,.19-.84A6.32,6.32,0,0,0,20,20.13Z"/></g></g></svg></brick>                        <brick id="emojiDescriptionBrick5">' + byLanguage("Furious","Furiosa") + '</brick>                </brick>                <brick id="emojiSelectorBrick"></brick>            </brick>            <brick id="textAreasBrick">                <textarea id="textAreaBrick" placeholder="' + byLanguage("How would you describe your experience?","Compartanos su experiencia.") + '"></textarea>            </brick>            <brick id="inputAreasBrick">                <input id="inputAreaBrick" placeholder="' + byLanguage("email@example.com","correo@ejemplo.com") + '"></input>            </brick>            <brick id="actionButtonBrick">' + byLanguage("NEXT","SIG.") + '</brick>            <brick id="skipButtonBrick">' + byLanguage("Skip","Omitir") + '</brick>            <brick id="notificationParagraphBrick"></brick>        </brick>            <brick id="sharedComponentsArea">            <brick id="imagenPerfilOperator" src="none" alt="teller Operator"><brick id="stateLight"></brick></brick>            <brick id="operatorBrick">'+ operatorData()[0] +'</brick>            <brick id="stateBrick">'+ operatorData()[1] +'</brick>            <brick id="platformBoxBrick"><brick id="bubbleWelcome"></brick></brick>        </brick>            <brick id="whatsappArea">            <input id="textAreaWsp" placeholder="' + byLanguage("Send us a message","Escribe un mensaje.") + '"></input>            <brick id="wspSendButtonBrick">' + wspSendButtonIcon +'</brick>        </brick>            <brick id="telegramArea">            <input id="textAreaTelegram" placeholder="' + byLanguage("Join us in Telegram","Unetenos en Telegram.") + '"></input>            <brick id="telegramSendButtonBrick">' + telegramSendButtonIcon +'</brick>        </brick>        <brick id="messengerArea">            <a id="messengerSendButtonBrick">'+ byLanguage("Send us a message","Envienos un mensaje") + messengerSendButtonIcon +'</a>        </brick>        </brick>'
+    var tellerBrick = '\
+    <brick id="hoverBrick"></brick>\
+    <brick id="buttonFatherBrick">\
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30" ><circle class="tellersFace" cx="15" cy="15" r="15"/><path id="palomita" d="M22.8,7.4l-9.9,15.2c-0.2,0.2-0.5,0.1-0.5-0.1L11.9,15c0-0.1-0.1-0.3-0.3-0.3l-5-0.7c-0.3,0-0.3-0.4-0.1-0.6L22.4,7C22.7,6.8,22.9,7.1,22.8,7.4z"/><path id="xBrick" d="M17.3,14.8l3.7-3.7c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0l-3.7,3.7L11.6,9C11,8.4,10,8.4,9.4,9c-0.6,0.6-0.6,1.5,0,2.1l3.7,3.7l-3.7,3.7c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4c0.4,0,0.8-0.1,1.1-0.4l3.7-3.7l3.7,3.7c0.3,0.3,0.7,0.4,1.1,0.4c0.4,0,0.8-0.1,1.1-0.4c0.6-0.6,0.6-1.5,0-2.1L17.3,14.8z"/></svg>\
+        <brick id="notificationInMainButton"><brick id="notificationInMainButtonPulse"></brick></brick>\
+    </brick>\
+    <brick id="buttonsComplementsBrick">'+ complementsComposer()[0] +'</brick>\
+    <brick id="fatherBrick">\
+        <brick id="feedbackBrick">\
+            <brick id="mainNotificationBrick">\
+                <brick id="titleBrick">' + byLanguage("How would you describe your experience?","Califique su experiencia.") + '</brick>\
+                <brick id="paragraphBrick">' + byLanguage('Powered by '+ tellerSmallA,'Con el poder de '+ tellerSmallA) + '</brick>\
+            </brick>\
+            <brick id="emojisBrick">\
+                <brick id="emojiBrick1">\
+                    <brick id="emojiFaceBrick1">\
+                        <svg id="SuperFaceTeller" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs></defs><g><circle class="tellersFace" cx="20" cy="20" r="20"/><g><path class="tellersGesture" d="M27.17,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,27.17,13.58Z"/><path class="tellersGesture" d="M14.34,15.09a1.51,1.51,0,1,0-1.51,1.51A1.52,1.52,0,0,0,14.34,15.09Z"/><path class="tellersGesture" d="M25.5,20.89h-11a1,1,0,0,0-.79.37,1,1,0,0,0-.19.85A6.32,6.32,0,0,0,20,26.66c4.44,0,6.18-3,6.49-4.58a1,1,0,0,0-.21-.83A1,1,0,0,0,25.5,20.89Z"/></g></g></svg>\
+                    </brick>\
+                    <brick id="emojiDescriptionBrick1">' + byLanguage("Super","Super") + '</brick>\
+                </brick>\
+                <brick id="emojiBrick2">\
+                    <brick id="emojiFaceBrick2">\
+                        <svg id="GoodFaceTeller" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs></defs><g><circle class="tellersFace" cx="20" cy="20" r="20"/><g><path class="tellersGesture" d="M27.17,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,27.17,13.58Z"/><path class="tellersGesture" d="M14.34,15.09a1.51,1.51,0,1,0-1.51,1.51A1.52,1.52,0,0,0,14.34,15.09Z"/><path class="tellersGesture" d="M25,20.71a8.54,8.54,0,0,1-5,1.34,8.47,8.47,0,0,1-5-1.34,1,1,0,1,0-1.28,1.53A10.17,10.17,0,0,0,20,24.05a10.17,10.17,0,0,0,6.3-1.81A1,1,0,1,0,25,20.71Z"/></g></g></svg>\
+                    </brick>\
+                    <brick id="emojiDescriptionBrick2">' + byLanguage("Good","Buena") + '</brick>\
+                </brick>\
+                <brick id="emojiBrick3">\
+                    <brick id="emojiFaceBrick3">\
+                        <svg id="NeutralFaceTeller" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs></defs><g><circle class="tellersFace" cx="20" cy="20" r="20"/><g><path class="tellersGesture" d="M27.17,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,27.17,13.58Z"/><path class="tellersGesture" d="M12.83,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,12.83,13.58Z"/><path class="tellersGesture" d="M23.47,22.4H16.53a1,1,0,0,0,0,2h6.94a1,1,0,0,0,0-2Z"/></g></g></svg>\
+                    </brick>\
+                    <brick id="emojiDescriptionBrick3">' + byLanguage("Normal","Normal") + '</brick>\
+                </brick>\
+                <brick id="emojiBrick4">\
+                    <brick id="emojiFaceBrick4">\
+                        <svg id="BadFaceTeller" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs></defs><g><circle class="tellersFace" cx="20" cy="20" r="20"/><g><path class="tellersGesture" d="M27.17,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,27.17,13.58Z"/><path class="tellersGesture" d="M14.34,15.09a1.51,1.51,0,1,0-1.51,1.51A1.52,1.52,0,0,0,14.34,15.09Z"/><path class="tellersGesture" d="M20,20.47a10.18,10.18,0,0,0-6.3,1.82A1,1,0,1,0,15,23.82a8.46,8.46,0,0,1,5-1.35,8.46,8.46,0,0,1,5,1.35,1,1,0,0,0,.64.23,1,1,0,0,0,.64-1.76A10.18,10.18,0,0,0,20,20.47Z"/></g></g></svg>\
+                    </brick>\
+                    <brick id="emojiDescriptionBrick4">' + byLanguage("Bad","Mala") + '</brick>\
+                </brick>\
+                <brick id="emojiBrick5">\
+                    <brick id="emojiFaceBrick5">\
+                        <svg id="FuriousFaceTeller" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs></defs><g><circle class="tellersFace" cx="20" cy="20" r="20"/><g><path class="tellersGesture" d="M27.17,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,27.17,13.58Z"/><path class="tellersGesture" d="M14.34,15.09a1.51,1.51,0,1,0-1.51,1.51A1.52,1.52,0,0,0,14.34,15.09Z"/><path class="tellersGesture" d="M20,20.13c-4.44,0-6.18,3-6.49,4.59a1,1,0,0,0,.21.82,1,1,0,0,0,.78.37h11a1,1,0,0,0,.79-.38,1,1,0,0,0,.19-.84A6.32,6.32,0,0,0,20,20.13Z"/></g></g></svg>\
+                    </brick>\
+                    <brick id="emojiDescriptionBrick5">' + byLanguage("Furious","Furiosa") + '</brick>\
+                </brick>\
+                <brick id="emojiSelectorBrick"></brick>\
+            </brick>\
+            <brick id="textAreasBrick">\
+                <textarea id="textAreaBrick" placeholder="' + byLanguage("How would you describe your experience?","Compartanos su experiencia.") + '"></textarea>\
+            </brick>\
+                <brick id="inputAreasBrick">\
+                    <input id="inputAreaBrick" placeholder="' + byLanguage("email@example.com","correo@ejemplo.com") + '"></input>\
+                </brick>\
+                <brick id="actionButtonBrick">' + byLanguage("NEXT","SIG.") + '</brick>\
+                <brick id="skipButtonBrick">' + byLanguage("Skip","Omitir") + '</brick>\
+                <brick id="notificationParagraphBrick"></brick>\
+        </brick>\
+        <brick id="sharedComponentsArea">\
+            <brick id="imagenPerfilOperator" src="none" alt="teller Operator">\
+                <brick id="stateLight"></brick>\
+            </brick>\
+            <brick id="operatorBrick">'+ operatorData()[0] +'</brick>\
+            <brick id="stateBrick">'+ operatorData()[1] +'</brick>\
+            <brick id="platformBoxBrick">\
+                <brick id="bubbleWelcome"></brick>\
+            </brick>\
+        </brick>\
+        <brick id="whatsappArea">\
+            <input id="textAreaWsp" placeholder="' + byLanguage("Send us a message","Escribe un mensaje.") + '"></input>\
+            <brick id="wspSendButtonBrick">' + wspSendButtonIcon +'</brick>\
+        </brick>\
+        <brick id="telegramArea">\
+            <input id="textAreaTelegram" placeholder="' + byLanguage("Join us in Telegram","Unetenos en Telegram.") + '"></input>\
+            <brick id="telegramSendButtonBrick">' + telegramSendButtonIcon +'</brick>\
+        </brick>\
+        <brick id="messengerArea">\
+            <a id="messengerSendButtonBrick">'+ byLanguage("Send us a message","Envienos un mensaje") + messengerSendButtonIcon +'</a>\
+        </brick>\
+    </brick>'
 
     //Detect browser section /////Must go out
     function detectBrowser(){
@@ -1817,7 +1673,7 @@ function kiujdgrsghsss(){
         x.style.display = "block";
         setTimeout(function(){
             x.style.opacity = "1";
-        },300);
+        },310);
     }
 
     //showMyEmojiMan(x: object that u wanna show man)
@@ -1849,18 +1705,22 @@ function kiujdgrsghsss(){
     //Get side by user
     function getSide(){
         a = tellerTag.getAttribute("side")
-        if (a == null || a == "none" || a == "" || a == "left") {return [
-            "left",
-            "70",
-            'transparent '+ byTheme(charmingGrey,realWhite) +' transparent transparent;',
-            '5px 7px 5px 0'
-        ];}      
-        else {return [
-            "right",
-            "52",
-            'transparent transparent transparent'+ byTheme(charmingGrey,realWhite),
-            '5px 0 5px 7px'
-        ];}
+        if (a == null || a == "none" || a == "" || a == "left"){
+            return [
+                "left",
+                "60",
+                'transparent '+ byTheme(charmingGrey,realWhite) +' transparent transparent',
+                '5px 7px 5px 0'
+            ]
+        ;}      
+        else{
+            return [
+                "right",
+                "60",
+                'transparent transparent transparent '+ byTheme(charmingGrey,realWhite),
+                '5px 0 5px 7px'
+            ]
+        ;}
     }
 
     //Select colors by theme
@@ -1951,10 +1811,10 @@ function kiujdgrsghsss(){
             if(tellerUseTelegram && !tellerUseMessenger && !tellerUseFeedback && !tellerUseWsp){onlyTelegram = true;}
             //hide complements brick if only one complement is used
             if(x==0)y = 0;  
-            else if(x==1){y =  0; return [(buttonFeedbackComposer()+buttonWspComposer()+buttonMessengerComposer()+buttonTelegramComposer()),y,"block","none !important"]} 
-            else if(x==2){y =  100;return [(buttonFeedbackComposer()+buttonWspComposer()+buttonMessengerComposer()+buttonTelegramComposer()),y,"block","block"]}  
-            else if(x==3){y =  150;return [(buttonFeedbackComposer()+buttonWspComposer()+buttonMessengerComposer()+buttonTelegramComposer()),y,"block","block"]}
-            else if(x==4){y =  200;return [(buttonFeedbackComposer()+buttonWspComposer()+buttonMessengerComposer()+buttonTelegramComposer()),y,"block","block"]}
+            else if(x==1){y =  0; return [(buttonFeedbackComposer()+buttonWspComposer()+buttonMessengerComposer()+buttonTelegramComposer()),y,"block","!important"]} 
+            else if(x==2){y =  100;return [(buttonFeedbackComposer()+buttonWspComposer()+buttonMessengerComposer()+buttonTelegramComposer()),y,"block",""]}  
+            else if(x==3){y =  150;return [(buttonFeedbackComposer()+buttonWspComposer()+buttonMessengerComposer()+buttonTelegramComposer()),y,"block",""]}
+            else if(x==4){y =  200;return [(buttonFeedbackComposer()+buttonWspComposer()+buttonMessengerComposer()+buttonTelegramComposer()),y,"block",""]}
         }
     }
 
@@ -2034,6 +1894,7 @@ function kiujdgrsghsss(){
         const buttonWhatsappBrick = document.getElementById("buttonWhatsappBrick");
         const buttonFeedbackBrick = document.getElementById("buttonFeedbackBrick");
         const stateLight = document.getElementById("stateLight");
+        const notificationInMainButton = document.getElementById("notificationInMainButton");
 
         //feedback components
         var currentHeightforFeedback = 200;
@@ -2149,8 +2010,8 @@ function kiujdgrsghsss(){
                     x = interacted;
                     if(!x){
                         userCallToActionMessage()
-                        hoverBrick.style.display="block";
-                        setTimeout(function(){ hoverBrick.style.opacity = "1";  },1);
+                        notificationInMainButton.style.display="block";
+                        setTimeout(function(){ notificationInMainButton.style.opacity = "1";  },1);
                     }
                 },appearAfter());
             }
@@ -2245,7 +2106,6 @@ function kiujdgrsghsss(){
         //Hide teller components
         function hideTellerComponents(){
             hmm(feedbackBrick);
-            hmm(mainNotificationBrick);
             setTimeout(function(){
                 if(tellerUseFeedback){
                 offButtonBrick(feedbackIconShape);
@@ -2259,7 +2119,6 @@ function kiujdgrsghsss(){
             onButtonBrick(feedbackIconShape);
             smm(fatherBrick)
             smm(feedbackBrick)
-            smm(mainNotificationBrick)
             fatherBrick.style.height = currentHeightforFeedback + "px"
         }
         
@@ -2338,6 +2197,15 @@ function kiujdgrsghsss(){
             }
         }
 
+        //notification number over main button
+        notificationInMainButton.addEventListener("mouseover", function(){
+            //appear hoverBrick
+            smm(hoverBrick);
+            //Notification numbers dissapear
+            setTimeout(function(){hmm(notificationInMainButton);}, 300);
+        })
+                
+
         //telegram main Button
         telegramBrickListener()
         function telegramBrickListener(){
@@ -2349,7 +2217,7 @@ function kiujdgrsghsss(){
                         setTimeout(function(){
                             showSharedComponent();
                             showTelegramContent()
-                        }, 300);                    
+                        }, 300);
                 })
         }
 
@@ -2448,6 +2316,8 @@ function kiujdgrsghsss(){
                 //Main Button animation
                 palomita.style.opacity = "0";
                 palomita.style.transform = "scaleX(0)";
+                //Notification numbers dissapear
+                hmm(notificationInMainButton);
                 setTimeout(function(){
                     xBrick.style.opacity = "1";
                     xBrick.style.transform = "translateX(0px) scaleX(1)";
