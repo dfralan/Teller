@@ -107,6 +107,7 @@ function kiujdgrsghsss(){
         font-family: "Outfit", sans-serif;\
         color: '+  byTheme(realWhite, charmingGrey) +';\
         background-color: '+  byTheme(charmingGrey,realWhite) +'!important;\
+        box-shadow: -2px 1px 5px rgba(0,0,0,0.1) !important;\
     }\
     #hoverBrick:after{\
         top:10px;\
