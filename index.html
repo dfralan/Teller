@@ -2,17 +2,22 @@
     	<meta charset="UTF-8" type="text/javascript">
 	<style>
 		.finger {
+		opacity: 0;
 		font-size: 80px;
 		position: fixed;
 		left: 220px; bottom: 30px;
 		animation-name: pulser;
-		animation-duration: 3s;
-		animation-iteration-count: 2, 0, infinite;}
+		animation-duration: 8s;
+		animation-iteration-count: 1;}
 
 		@keyframes pulser {
 		0%   {transform: translateX(0px);}
-		50%  {transform: translateX(-10px);}
-		100% {transform: translateX(0px);}
+		10%  {opacity: 1;}
+		20%  {transform: translateX(-10px);}
+		40%   {transform: translateX(0px);}
+		45% {transform: translateX(0px);}
+		65%   {transform: translateX(-10px);}
+		85%   {transform: translateX(0px);}
 		}
 	</style>
 </head>
