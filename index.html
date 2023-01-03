@@ -1,5 +1,20 @@
 <head>
-    <meta charset="UTF-8" type="text/javascript">
+    	<meta charset="UTF-8" type="text/javascript">
+	<style>
+		.finger {
+		font-size: 80px;
+		position: fixed;
+		left: 220px; bottom: 30px;
+		animation-name: pulser;
+		animation-duration: 3s;
+		animation-iteration-count: 2, 0, infinite;}
+
+		@keyframes pulser {
+		0%   {transform: translateX(0px);}
+		50%  {transform: translateX(-10px);}
+		100% {transform: translateX(0px);}
+		}
+	</style>
 </head>
 
 
@@ -27,6 +42,8 @@
 	></teller>
 	<center><a href="https://github.com/dfralan/teller" target="_blank">Go to github</a></center>
 	<center><a href="https://gist.github.com/dfralan/7d378750d0cc1c2e6bc2bae0666d0320" target="_blank">Gist script</a></center>
+	<h1 class="finger">👈</h1>
+	
   
 	<script src="teller.js"></script>
 </body>
