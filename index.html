@@ -1,24 +1,23 @@
 <head>
     	<meta charset="UTF-8" type="text/javascript">
 	<style>
-		.finger {
+	.finger {
 		opacity: 0;
-		font-size: 80px;
+		font-size: 40px;
 		position: fixed;
-		left: 220px; bottom: 30px;
+    		display: block;
+		left: 220px; bottom: 10px;
 		animation-name: pulser;
 		animation-duration: 8s;
-		animation-iteration-count: 1;}
+		animation-iteration-count: 2, infinite;}
 
 		@keyframes pulser {
-		0%   {transform: translateX(0px);}
-		10%  {opacity: 1;}
-		20%  {transform: translateX(-10px);}
-		40%   {transform: translateX(0px);}
+		10% {opacity: 1;}
+		20% {transform: translateX(-10px);}
+		40% {transform: translateX(0px);}
 		45% {transform: translateX(0px);}
-		65%   {transform: translateX(-10px);}
-		85%   {transform: translateX(0px);}
-		}
+		65% {transform: translateX(-10px);opacity: 1;}
+	}
 	</style>
 </head>
 
