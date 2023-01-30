@@ -70,11 +70,11 @@ Estas instrucciones te permitirán crear tu botón de chat y agregarlo a tu proy
 
 - side: Lugar en la pantalla donde se ubicará el botón ("left" si quieres que aparezca a la izquierda, o "right" si quieres que aparezca a la derecha, en caso que lo dejes en blanco aparecera a la derecha de forma predeterminada.)
 
-- borderRadius: Redonde del botón y de la barra de complementos. (Recomendado: 10 ó 25);
+- borderRadius: Redondeo de los botones y barra de complementos. (Recomendado: 10 ó 25);
 
 - theme: Tema del widget, puedes elegír entre light ó dark.
 
-- callToAction: Mensaje de llamado de acción.
+- callToAction: Mensaje de llamado de acción. (Por ejemplo: Comentanos tu experiencia.)
 
 - appearAfter: Tiempo en segundos en que aparecerá el llamado a la acción. (En caso que lo dejes en blanco aparecerá de forma predeterminada a los 5 segundos.)
 
