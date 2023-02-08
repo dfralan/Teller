@@ -49,7 +49,7 @@ Estas instrucciones te permitirán crear tu botón de chat y agregarlo a tu proy
 - Linkea el CDN de Teller o agrega el archivo teller.js o teller.min.js a tu proyecto por debajo del elemento de esta forma: https://github.com/dfralan/Teller/blob/main/teller.js
 
 ```bash
-<script src="teller.js"></script> 
+<script src="https://cdn.jsdelivr.net/gh/dfralan/Teller@main/teller.js"></script> 
 ```
 
 ** Repasemos los campos 🔧 **
