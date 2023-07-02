@@ -1,5 +1,10 @@
 # Teller
+
 Chat button and feedback Widget.
+
+** Gracefulness 🌈 **
+
+Messages are saved in a google form, so you don't need a dedicated server or backend configuration.
 
 ** Updates 🤖 **
 
