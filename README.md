@@ -2,6 +2,8 @@
 
 Chat button and feedback Widget.
 
+![Alt Text](demonstration.gif)
+
 ** Gracefulness 🌈 **
 
 Messages are saved in a google form, so you don't need a dedicated server or backend configuration.
