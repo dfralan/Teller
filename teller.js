@@ -1615,11 +1615,6 @@ function kiujdgrsghsss(){
         else if (clientLang == 'pt'){return pt;}
     }
 
-    function fixScaleOnIE(){
-        if (detectBrowser() == "ie") {return ""}
-        else {return "@media only screen and (max-width: 1000px) {teller {transform: scale(2)}}"}
-    }
-
     //Get color selected by user
     function userColor(){
         a = tellerTag.getAttribute("userColor")
