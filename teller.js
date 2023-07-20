@@ -1617,7 +1617,7 @@ function kiujdgrsghsss(){
 
     //Get color selected by user
     function userColor(){
-        a = tellerTag.getAttribute("userColor")
+        let a = tellerTag.getAttribute("userColor")
         if (a == null || a == "none" || a == "")
         return byTheme(charmingGrey,realWhite);
         else{return a}
@@ -1625,7 +1625,7 @@ function kiujdgrsghsss(){
 
     //Get border-radius of bubble selected by user    
     function userBorderRadius(){
-        a = tellerTag.getAttribute("borderRadius")
+        let a = tellerTag.getAttribute("borderRadius")
         if (a == null || a == "none" || a == "")
         return "25";
         else{return a}
