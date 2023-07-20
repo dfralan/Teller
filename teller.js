@@ -1685,7 +1685,7 @@ function kiujdgrsghsss(){
 
     //Brick appear after x milliseconds
     function appearAfter(){
-        a = tellerTag.getAttribute("appearAfter")
+        let a = tellerTag.getAttribute("appearAfter")
         if (a == null || a == "none" || a == ""){return 5000}
         else if (a == "never"){return a}
         else{return Math.round(parseInt(a))*1000}
@@ -1693,14 +1693,14 @@ function kiujdgrsghsss(){
     
     //Get theme selected by user
     function userTheme(){
-        a = tellerTag.getAttribute("theme")
+        let a = tellerTag.getAttribute("theme")
         if (a == null || a == "none" || a == "" || a == "light") {return "light";}      
         else {return "dark";}
     }
 
     //Get side by user
     function getSide(){
-        a = tellerTag.getAttribute("side")
+        let a = tellerTag.getAttribute("side")
         if (a == null || a == "none" || a == "" || a == "left"){
             return [
                 "left",
@@ -1727,7 +1727,7 @@ function kiujdgrsghsss(){
 
     //Create or not Feedback Button
     function buttonFeedbackComposer(){
-        a = tellerTag.getAttribute("formUrl")
+        let a = tellerTag.getAttribute("formUrl")
         if (a == null || a == "none" || a == ""){
             tellerUseFeedback = false;
             return '';
@@ -1740,7 +1740,7 @@ function kiujdgrsghsss(){
 
     //Create or not messenger Button
     function buttonMessengerComposer(){
-        a = tellerTag.getAttribute("messengerID")
+        let a = tellerTag.getAttribute("messengerID")
         if (a == null || a == "none" || a == ""){
             tellerUseMessenger = false;
             return '';
@@ -1753,7 +1753,7 @@ function kiujdgrsghsss(){
 
     //Create or not Whatsapp Button
     function buttonWspComposer(){
-        a = tellerTag.getAttribute("whatsappNumber")
+        let a = tellerTag.getAttribute("whatsappNumber")
         if (a == null || a == "none" || a == ""){
             tellerUseWsp = false;
             return '';
@@ -1766,7 +1766,7 @@ function kiujdgrsghsss(){
 
     //Create or not Whatsapp Button
     function buttonTelegramComposer(){
-        a = tellerTag.getAttribute("telegramID")
+        let a = tellerTag.getAttribute("telegramID")
         if (a == null || a == "none" || a == ""){
             tellerUseTelegram = false;
             return '';
@@ -1779,7 +1779,7 @@ function kiujdgrsghsss(){
 
     //Get profile picture URL
     function userPicture(){
-        a = tellerTag.getAttribute("photoUrl")
+        let a = tellerTag.getAttribute("photoUrl")
         if (a == null || a == "none" || a == ""){return 'none';}
         else{return a};
     }
@@ -1817,9 +1817,9 @@ function kiujdgrsghsss(){
     //Get operator state (online/offline & name)
     function operatorData(){
         //User attributes
-        u = tellerTag.getAttribute("username")
-        n = tellerTag.getAttribute("operatorName")    
-        h = tellerTag.getAttribute("supportHours")
+        let u = tellerTag.getAttribute("username")
+        let n = tellerTag.getAttribute("operatorName")    
+        let h = tellerTag.getAttribute("supportHours")
         //Get or set operatorName
         function operatorName(){
             if(n == null || n == "none" || n == "" && u == null || u == "none" || u == ""){return byLanguage("Bot John","Bot Juancho");}
