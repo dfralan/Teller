@@ -1,6 +1,6 @@
 /*!
-  * Teller v1.0.0 (https://github.com/dfralan/Teller)
-  * Copyright 2021-2022 The Teller Authors.
+  * Teller v2.0.0 (https://github.com/dfralan/Teller)
+  * Copyright 2021-2023 The Teller Authors.
   * Licensed under GNU GENERAL PUBLIC LICENSE (https://github.com/dfralan/Teller/blob/main/LICENSE)
   */
 function kiujdgrsghsss(){
