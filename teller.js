@@ -77,7 +77,6 @@ function kiujdgrsghsss(){
     //Styles sheet/Hoja de estilos
     const styleSheetTeller = '<style>\
     @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;600&display=swap");\
-    '+ fixScaleOnIE()+'\
     teller{\
         display:'+ complementsComposer()[2]+';\
         position: fixed!important;\
