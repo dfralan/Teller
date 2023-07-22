@@ -1876,8 +1876,8 @@ function kiujdgrsghsss(){
         tellerTag.innerHTML = styleSheetTeller + tellerBrick;
         //Get form entries for feedback query
         function urlFeedbackConstructor(){
-            ffu = tellerTag.getAttribute("formUrl")
-            ss = ffu.match("https(.*)/viewform");
+            let ffu = tellerTag.getAttribute("formUrl")
+            var ss = ffu.match("https(.*)/viewform");
             var formEntries = ffu.match(/entry.([0-9]+)/g);
             entryA = formEntries[0];
             entryB = formEntries[1];
@@ -2008,8 +2008,7 @@ function kiujdgrsghsss(){
             if (appearAfter() == "never"){return}
             else{
                 setTimeout(function(){
-                    x = interacted;
-                    if(!x){
+                    if(!interacted){
                         userCallToActionMessage()
                         notificationInMainButton.style.display="block";
                         setTimeout(function(){ notificationInMainButton.style.opacity = "1";  },1);
