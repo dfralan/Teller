@@ -2019,7 +2019,7 @@ function kiujdgrsghsss(){
 
         //Create link for messenger and redirect
         function toMessenger(){
-            a = tellerTag.getAttribute("messengerID")
+            let a = tellerTag.getAttribute("messengerID")
             if (a == null || a == "none" || a == ""){
                 return "";
             }
