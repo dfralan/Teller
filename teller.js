@@ -1575,8 +1575,8 @@ function kiujdgrsghsss(){
 
     //Detect browser section /////Must go out
     function detectBrowser(){
-        isIE = /*@cc_on!@*/false || !!document.documentMode;
-        isEdge = !isIE && !!window.StyleMedia;
+        var isIE = /*@cc_on!@*/false || !!document.documentMode;
+        var isEdge = !isIE && !!window.StyleMedia;
         if(navigator.userAgent.indexOf("Chrome") != -1 && !isEdge){return 'chrome';}
         else if(navigator.userAgent.indexOf("Safari") != -1 && !isEdge){return 'safari';}
         else if(navigator.userAgent.indexOf("Firefox") != -1 ) {return 'firefox';}
