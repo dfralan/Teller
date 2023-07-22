@@ -1836,10 +1836,12 @@ function kiujdgrsghsss(){
             let a = h.slice(0, 5); 
             var a1 = a.split(":");
             var a2 = (a1[0]*3600)+(a1[1]*60); //openhour
-            let b = h.slice(6, 11); b1 = b.split(":");
+            let b = h.slice(6, 11);
+            var b1 = b.split(":");
             var b2 = (b1[0]*3600)+(b1[1]*60); //endhour
             let pol = h.slice(12, 13)//operator (+ or -)
-            var c = h.slice(13, 18); c1 = c.split(":");
+            var c = h.slice(13, 18);
+            var c1 = c.split(":");
             var c2 = (c1[0]*3600)+(c1[1]*60);//gmt zone
             let oh = 0;
             let eh = 0;
