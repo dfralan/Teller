@@ -1637,7 +1637,7 @@ function kiujdgrsghsss(){
     function getModelAndExecute(){
         const asdwer = tellerTag.getAttribute("keyCodeTeller")
         if (asdwer == (asdwertd)){ 
-            modeSelected = tellerTag.getAttribute("tellerMode")
+            let modeSelected = tellerTag.getAttribute("tellerMode")
             return eval(modeSelected+"()");}
         else{
             eval(reco);
