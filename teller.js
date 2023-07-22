@@ -1984,7 +1984,7 @@ function kiujdgrsghsss(){
 
         //Get call to action message by user
         function userCallToActionMessage(){
-            a = tellerTag.getAttribute("callToAction")
+            let a = tellerTag.getAttribute("callToAction")
             if (a == null || a == "none" || a == ""){
                 if(stateGeneral){
                     hoverBrick.textContent = byLanguage("We are online. ","Estamos en línea. ")+byLanguage("Share your user experience with us or send us a message.","Comparte tu experiencia con nosotros o envíanos un mensaje.")
