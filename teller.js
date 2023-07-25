@@ -120,7 +120,7 @@ function kiujdgrsghsss(){
     #buttonFatherBrick{\
         transition:'+transitionChill+'\
         opacity: 1;\
-        box-shadow: 0 1px 2px rgba(0,0,0,0.2);\
+        '+useShadowButton()+'\
         position: absolute!important;\
         background-color: '+ byTheme(realWhite, charmingGrey) +'!important;\
         width: 50px;\
@@ -173,7 +173,7 @@ function kiujdgrsghsss(){
         bottom: 70px!important;\
         border-radius: 10px;\
         transform: translateY(10px);\
-        box-shadow: 0 0 10px rgba(0,0,0,0.2);\
+        '+useShadowBrick()+'\
     }\
     #xBrick{\
         transition:'+transitionChill+'\
@@ -1592,6 +1592,20 @@ function kiujdgrsghsss(){
         else if(/[es|ES]/.test(a)){clientLang = "es";}
         else if(/[en|EN]/.test(a)){clientLang = "en";}
     }
+
+    function useShadowButton(){  
+    var buttonShadow = tellerTag.getAttribute("button-shadow")
+    if (a == null || a == "none" || a == ""){return ""}
+    else {return "box-shadow: 0 1px 2px rgba(0,0,0,0.2);"}
+    }
+
+ function useShadowBrick(){  
+    var brickShadow = tellerTag.getAttribute("brick-shadow")
+    if (brickShadow == null || brickShadow == "none" || brickShadow == ""){return ""}
+    else {return "box-shadow: 0 0 10px rgba(0,0,0,0.2);"}
+    }
+
+ 
 
     //Detect user language
     function detectUserLang(){
