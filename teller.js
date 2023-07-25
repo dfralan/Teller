@@ -1595,7 +1595,7 @@ function kiujdgrsghsss(){
 
     function useShadowButton(){  
     var buttonShadow = tellerTag.getAttribute("button-shadow")
-    if (a == null || a == "none" || a == ""){return ""}
+    if (buttonShadow == null || buttonShadow == "none" || buttonShadow == ""){return ""}
     else {return "box-shadow: 0 1px 2px rgba(0,0,0,0.2);"}
     }
 
