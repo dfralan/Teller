@@ -29,7 +29,7 @@ function kiujdgrsghsss(){
     const emojiBrickStyle = 'transition:'+transitionChill+'position: absolute!important;opacity: 0.25;background-color: transparent!important;width: 60px!important;height: 80px!important;left: 0!important;top: 0!important;text-align: center!important;cursor: pointer!important;'
     //Color Palette
     const almostBlack = '#0D1418';
-    const realWhite = 'white';
+    const realWhite = '#F9FAFC';
     const nebulaGrey = '#E8E8E8';
     const realGrey = '#808080';
     const charmingGrey = '#2A2F32';
