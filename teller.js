@@ -1,5 +1,5 @@
 /*!
-  * Teller v3.0.0 (https://github.com/dfralan/Teller)
+  * Teller v3.0.2 (https://github.com/dfralan/Teller)
   * Copyright 2021-2023 The Teller Authors.
   * Licensed under GNU GENERAL PUBLIC LICENSE (https://github.com/dfralan/Teller/blob/main/LICENSE)
   */
