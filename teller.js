@@ -1425,6 +1425,7 @@
             
             //EmailInput
             const inputAreaBrick = document.getElementById("inputAreaBrick");
+            const inputAreasBrick = document.getElementById("inputAreasBrick");
 
             //Feedback textarea
             const textAreasBrick = document.getElementById("textAreasBrick");
