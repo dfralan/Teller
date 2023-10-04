@@ -2,8 +2,7 @@
 
 Chat button and feedback Widget.
 
-<video width="100%" src="demo.mp4" muted autoplay></video>
-![Alt Text](demonstration.gif)
+![Alt Text](demo.gif)
 
 ** Gracefulness 🌈 **
 
@@ -24,6 +23,8 @@ Puedes integrar solo una plataforma o todas las que quieras, en caso que decidas
 Este complemento utiliza UTF-8, asegurate de utilizarlo para ver los caractéres de forma correcta.
 
 ** Comenzando 🚀 **
+
+![Alt Text](demonstration.gif)
 
 Estas instrucciones te permitirán crear tu botón de chat y agregarlo a tu proyecto.
 
