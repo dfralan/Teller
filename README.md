@@ -2,7 +2,7 @@
 
 Chat button and feedback Widget.
 
-[demo.mp4](https://github.com/dfralan/Teller/blob/main/demo.mp4)
+<video width="100%" src="demo.mp4" muted autoplay></video>
 ![Alt Text](demonstration.gif)
 
 ** Gracefulness 🌈 **
