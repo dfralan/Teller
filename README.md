@@ -2,6 +2,7 @@
 
 Chat button and feedback Widget.
 
+![Alt Text](demo.mp4)
 ![Alt Text](demonstration.gif)
 
 ** Gracefulness 🌈 **
