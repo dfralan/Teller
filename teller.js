@@ -1389,13 +1389,13 @@
             tellerTag.innerHTML = styleSheetTeller + tellerBrick;
             //Get form entries for feedback query
             function urlFeedbackConstructor(){
-                ffu = tellerTag.getAttribute("formUrl")
-                ss = ffu.match("https(.*)/viewform");
+                let ffu = tellerTag.getAttribute("formUrl")
+                let ss = ffu.match("https(.*)/viewform");
                 var formEntries = ffu.match(/entry.([0-9]+)/g);
-                entryA = formEntries[0];
-                entryB = formEntries[1];
-                entryC = formEntries[2];
-                entryD = formEntries[3];
+                let entryA = formEntries[0];
+                let entryB = formEntries[1];
+                let entryC = formEntries[2];
+                let entryD = formEntries[3];
                 return ss[0].replace("viewform", "formResponse?usp=pp_url");        
             }
             
